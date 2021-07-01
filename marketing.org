@@ -1,0 +1,84 @@
+#+TITLE: Roast
+* Marketing Checklist
+** Marketing strategy
+This section outlines guidelines for creating marketing strategy. [fn:1]
+Can be improved and populated.
+*** Set goals
+**** raise brand awareness
+**** aqcuire new customers
+*** target audience
+**** what are you offering to your potential customers?
+**** what makes you unique?
+**** why would customers choose you over competitors?
+**** B2B -> benefit to business  of certain size or within industry?
+**** B2C -> preferred audience based on location, demographics, or interests?
+*** Find a place in the market
+**** market research - too narrow focus? correct position to reach the right people.
+** Reach
+This section highlights the actionable items.
+To be expanded and more specific
+*** Landing Page
+**** [ ] collect emails
+**** [ ] quick overview
+*** Social
+**** [ ] scheduling posts
+**** [ ] engaging twitter with questions / contraversial statements
+**** [ ] reddit posts
+**** [ ] medium posts
+*** Content Marketing
+**** blog posts
+**** videos
+**** [ ] [#A] infographics
+** Measure success of marketing
+*** analytics.google.com (roastedstakes@gmail.com)
+tracks interactions with website (rizome.io and roast.rizome.io)
+*** Delegator count and delegation amount
+denotes directly acquired customers
+* Marketing
+** Target Audience
+highlights two primary segments.
+*** Ada holders
+**** transparent tech stack
+**** dedicated on premise hardware
+**** redundant backup servers
+**** Good cause - low carbon footprint, higher vision (rizome garden)
+**** no clear benefit compared to other pools
+*** Independent investors that are aware of crypto but not necessary into Ada
+**** High risk advetureous
+**** Fast ROA (+5% per 2 weeks)
+*** TODO Market niche
+describe a narrow segment within target audience.
+
+* Rizome.io
+** Headlines
+*** Blockchain Consulting, Reseach & Solutions
+** TODO Value proposition
+*** IDEA bridging the gap for business use case of DLT
+** TODO Roadmap
+** Roast Pool story.
+The Roast Pool is operated to provide infrastructure for research and development of Cardano based projects. The minimum fees of 340 and the margin of 1% are set to create an competitive rewards for delegators until the pool builds reputation and and history of flawless uninterrupted operation.
+
+Current setup is hybrid of nodes running on the cloud to ensure reliability and local machines that provide additional redundancy and extensibility of the setup.
+
+As an environmentally aware organization we are aiming for a reduced footprint and carbon impact, thus reaching for the best efficiency of the hardware setup. Current hardware requirement for a Cardano node stake pool is 8GB of RAM, which is exactly what Raspberry Pi 4 is providing. We are currently testing reliability of such nodes and fine tuning the rig, when this configuration proves to keep up to high standards we would migrate the primary block production to the in-house solution. Until then the blocks are produced on the cloud provisioned machines.
+
+We are planning that pool rewards would cover the cost of running and provide enough resources to fund developer tools and open-source projects that we feel are in high demand with Cardano community. The emergence of Plutus, smart-contracts and native-tokens is driving the flow of developers and blockchain community to start using Cardano network. Our goal is to facilitate frictionless adoption by providing tools and knowledge for integration with Cardano blockchain.
+
+First year of operation in 2021 is primarily focused on the improving the infrastructure and tooling for the stake pool operation. This included documentation and learning materials, bootstrap scripts, monitoring configuration, ensuring security and resilience, ensuring autonomous operation.
+** Rizome.io Brand awareness
+*** Why?
+purpose, cause, belief. Why company exists?
+We believe that strong theoretical foundation and planning is the bedrock for a sustainable and reliable systems. This is why we decided to support Cardano project - they follow formal specifications, peer review protocols and scientific methodology in development. [fn:2]
+
+With years of successful work, deep research and timely updates behind they have proven their commitment to these values and made a strong claim for creating a secure foundation for decentralised value management and opens up the doors for a paradigm shifting technologies and interactions powered by blockchain.
+*** How?
+rizome.io aligns with technological stack of Haskell Foundation utilizing practices and tools from the Cardano core codebase and applying/integrating that into our infrastructure and solutions.
+
+With over a decade in Software Development and years in blockchain space we gained experience building and maintaining ifrastructures for large scale systems, with sweat and blood learnt importance of reprodusable builds and testability, which now serves to building exceptional user experiences, bringing to life paradigm shifting ideas.
+*** What?
+roast.rizome.io is a stake pool being run on a dedicated Ryzen 7 4800H machine with redundant backup servers in a different location. This ensures high availability and resilience against power/connection outages. Low competitive fees ensure high return of assets.
+
+* Footnotes
+[fn:2] https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/
+
+[fn:1] https://mailchimp.com/resources/startup-marketing-strategy/
