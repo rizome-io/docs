@@ -1,4 +1,4 @@
-#+TITLE: Roast
+#+TITLE: rizome.io marketing path
 * Marketing Checklist
 ** Marketing strategy
 This section outlines guidelines for creating marketing strategy. [fn:1]
