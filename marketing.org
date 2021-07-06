@@ -56,7 +56,7 @@ describe a narrow segment within target audience.
 *** IDEA bridging the gap for business use case of DLT
 ** TODO Roadmap
 ** Roast Pool story.
-The Roast Pool is operated to provide infrastructure for research and development of Cardano based projects. The minimum fees of 340 and the margin of 1% are set to create an competitive rewards for delegators until the pool builds reputation and and history of flawless uninterrupted operation.
+The Roast Pool is operated to provide infrastructure for research and development of Cardano based projects. The minimum fee of 340 and the margin of 1% are set to create a competitive rewards for delegators until the pool builds reputation and and history of flawless uninterrupted operation.
 
 Current setup is hybrid of nodes running on the cloud to ensure reliability and local machines that provide additional redundancy and extensibility of the setup.
 
