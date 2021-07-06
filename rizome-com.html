@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2021-07-06 Tue 18:06 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rizome Communication</title>
+<meta name="author" content="Andy Candy" />
+<meta name="generator" content="Org Mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Rizome Communication</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org58cb5ff">1. Marketing Checklist</a>
+<ul>
+<li><a href="#org0c40399">1.1. Marketing strategy</a>
+<ul>
+<li><a href="#org69c6a06">1.1.1. Set goals</a></li>
+<li><a href="#orgf90645b">1.1.2. target audience</a></li>
+<li><a href="#org3a4c91f">1.1.3. Find a place in the market</a></li>
+</ul>
+</li>
+<li><a href="#orgcd9f4e5">1.2. Reach</a>
+<ul>
+<li><a href="#org1145960">1.2.1. Landing Page</a></li>
+<li><a href="#org8033b54">1.2.2. Social</a></li>
+<li><a href="#orgf7128c7">1.2.3. Content Marketing</a></li>
+</ul>
+</li>
+<li><a href="#org66d8626">1.3. Measure success of marketing</a>
+<ul>
+<li><a href="#orgad6212f">1.3.1. analytics.google.com (roastedstakes@gmail.com)</a></li>
+<li><a href="#org9addc28">1.3.2. Delegator count and delegation amount</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd7e96d4">2. Marketing</a>
+<ul>
+<li><a href="#org6e12aaf">2.1. Target Audience</a>
+<ul>
+<li><a href="#org968458c">2.1.1. Ada holders</a></li>
+<li><a href="#orge6cc93c">2.1.2. Independent investors that are aware of crypto but not necessary into Ada</a></li>
+<li><a href="#orgf285d0b">2.1.3. <span class="todo TODO">TODO</span> Market niche</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orge291131">3. Rizome.io</a>
+<ul>
+<li><a href="#orga745de4">3.1. Headlines</a>
+<ul>
+<li><a href="#org5e74f46">3.1.1. Blockchain Consulting, Reseach &amp; Solutions</a></li>
+<li><a href="#org042d9f7">3.1.2. Architecture for distributed ledger tech</a></li>
+</ul>
+</li>
+<li><a href="#org07f448c">3.2. <span class="todo TODO">TODO</span> Value proposition</a>
+<ul>
+<li><a href="#orgff0551c">3.2.1. <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</a></li>
+<li><a href="#orgdfceb7b">3.2.2. Why?</a></li>
+<li><a href="#orgbbb7eef">3.2.3. How?</a></li>
+<li><a href="#org8b89ccf">3.2.4. What?</a></li>
+<li><a href="#orga45936e">3.2.5. Mission</a></li>
+</ul>
+</li>
+<li><a href="#org9b1b669">3.3. <span class="todo TODO">TODO</span> Roadmap</a></li>
+<li><a href="#orge803053">3.4. Roast Pool story.</a></li>
+<li><a href="#org826b7f3">3.5. Mission</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org58cb5ff" class="outline-2">
+<h2 id="org58cb5ff"><span class="section-number-2">1</span> Marketing Checklist</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org0c40399" class="outline-3">
+<h3 id="org0c40399"><span class="section-number-3">1.1</span> Marketing strategy</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+This section outlines guidelines for creating marketing strategy. <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+Can be improved and populated.
+</p>
+</div>
+<div id="outline-container-org69c6a06" class="outline-4">
+<h4 id="org69c6a06"><span class="section-number-4">1.1.1</span> Set goals</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="org6413a93"></a>raise brand awareness<br /></li>
+<li><a id="org9b1bad2"></a>aqcuire new customers<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf90645b" class="outline-4">
+<h4 id="orgf90645b"><span class="section-number-4">1.1.2</span> target audience</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="org875c5d9"></a>what are you offering to your potential customers?<br /></li>
+<li><a id="orgd6b459b"></a>what makes you unique?<br /></li>
+<li><a id="org9951370"></a>why would customers choose you over competitors?<br /></li>
+<li><a id="orge453ac8"></a>B2B -&gt; benefit to business  of certain size or within industry?<br /></li>
+<li><a id="org919dcb8"></a>B2C -&gt; preferred audience based on location, demographics, or interests?<br /></li>
+</ol>
+</div>
+<div id="outline-container-org3a4c91f" class="outline-4">
+<h4 id="org3a4c91f"><span class="section-number-4">1.1.3</span> Find a place in the market</h4>
+<div class="outline-text-4" id="text-1-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org3281ddb"></a>market research - too narrow focus? correct position to reach the right people.<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgcd9f4e5" class="outline-3">
+<h3 id="orgcd9f4e5"><span class="section-number-3">1.2</span> Reach</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+This section highlights the actionable items.
+To be expanded and more specific
+</p>
+</div>
+<div id="outline-container-org1145960" class="outline-4">
+<h4 id="org1145960"><span class="section-number-4">1.2.1</span> Landing Page</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org04cb141"></a><span class="todo ___">[ ]</span> collect emails<br /></li>
+<li><a id="orga983429"></a><span class="todo ___">[ ]</span> quick overview<br /></li>
+</ol>
+</div>
+<div id="outline-container-org8033b54" class="outline-4">
+<h4 id="org8033b54"><span class="section-number-4">1.2.2</span> Social</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org8417da1"></a><span class="todo ___">[ ]</span> scheduling posts<br /></li>
+<li><a id="orga18c64d"></a><span class="todo ___">[ ]</span> engaging twitter with questions / contraversial statements<br /></li>
+<li><a id="orgc69eb92"></a><span class="todo ___">[ ]</span> reddit posts<br /></li>
+<li><a id="orgb7e5577"></a><span class="todo ___">[ ]</span> medium posts<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf7128c7" class="outline-4">
+<h4 id="orgf7128c7"><span class="section-number-4">1.2.3</span> Content Marketing</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="org4b80d99"></a>blog posts<br /></li>
+<li><a id="org9b4c72d"></a>videos<br /></li>
+<li><a id="org2bcfc1e"></a><span class="todo ___">[ ]</span> infographics<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org66d8626" class="outline-3">
+<h3 id="org66d8626"><span class="section-number-3">1.3</span> Measure success of marketing</h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-orgad6212f" class="outline-4">
+<h4 id="orgad6212f"><span class="section-number-4">1.3.1</span> analytics.google.com (roastedstakes@gmail.com)</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+tracks interactions with website (rizome.io and roast.rizome.io)
+</p>
+</div>
+</div>
+<div id="outline-container-org9addc28" class="outline-4">
+<h4 id="org9addc28"><span class="section-number-4">1.3.2</span> Delegator count and delegation amount</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+denotes directly acquired customers
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd7e96d4" class="outline-2">
+<h2 id="orgd7e96d4"><span class="section-number-2">2</span> Marketing</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org6e12aaf" class="outline-3">
+<h3 id="org6e12aaf"><span class="section-number-3">2.1</span> Target Audience</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+highlights two primary segments.
+</p>
+</div>
+<div id="outline-container-org968458c" class="outline-4">
+<h4 id="org968458c"><span class="section-number-4">2.1.1</span> Ada holders</h4>
+<div class="outline-text-4" id="text-2-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orge042fb7"></a>transparent tech stack<br /></li>
+<li><a id="org4683e9e"></a>dedicated on premise hardware<br /></li>
+<li><a id="orgffcc72a"></a>redundant backup servers<br /></li>
+<li><a id="orgb3bf803"></a>Good cause - low carbon footprint, higher vision (rizome garden)<br /></li>
+<li><a id="orgd3ebf13"></a>no clear benefit compared to other pools<br /></li>
+</ol>
+</div>
+<div id="outline-container-orge6cc93c" class="outline-4">
+<h4 id="orge6cc93c"><span class="section-number-4">2.1.2</span> Independent investors that are aware of crypto but not necessary into Ada</h4>
+<div class="outline-text-4" id="text-2-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgb1aa34c"></a>High risk advetureous<br /></li>
+<li><a id="orgdf9adb7"></a>Fast ROA (+5% per 2 weeks)<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgf285d0b" class="outline-4">
+<h4 id="orgf285d0b"><span class="section-number-4">2.1.3</span> <span class="todo TODO">TODO</span> Market niche</h4>
+<div class="outline-text-4" id="text-2-1-3">
+<p>
+describe a narrow segment within target audience.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge291131" class="outline-2">
+<h2 id="orge291131"><span class="section-number-2">3</span> Rizome.io</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-orga745de4" class="outline-3">
+<h3 id="orga745de4"><span class="section-number-3">3.1</span> Headlines</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-org5e74f46" class="outline-4">
+<h4 id="org5e74f46"><span class="section-number-4">3.1.1</span> Blockchain Consulting, Reseach &amp; Solutions</h4>
+</div>
+<div id="outline-container-org042d9f7" class="outline-4">
+<h4 id="org042d9f7"><span class="section-number-4">3.1.2</span> Architecture for distributed ledger tech</h4>
+<div class="outline-text-4" id="text-3-1-2">
+<p>
+We provide reliable design and infrastructure solutions for projects powered by blockchain.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org07f448c" class="outline-3">
+<h3 id="org07f448c"><span class="section-number-3">3.2</span> <span class="todo TODO">TODO</span> Value proposition</h3>
+<div class="outline-text-3" id="text-3-2">
+</div>
+<div id="outline-container-orgff0551c" class="outline-4">
+<h4 id="orgff0551c"><span class="section-number-4">3.2.1</span> <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</h4>
+</div>
+<div id="outline-container-orgdfceb7b" class="outline-4">
+<h4 id="orgdfceb7b"><span class="section-number-4">3.2.2</span> Why?</h4>
+<div class="outline-text-4" id="text-3-2-2">
+<p>
+purpose, cause, belief. Why company exists?
+We believe that strong theoretical foundation and planning is the bedrock for a sustainable and reliable systems. This is why we decided to support Cardano project - they follow formal specifications, peer review protocols and scientific methodology in development. <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+</p>
+
+<p>
+With years of successful work, deep research and timely updates behind they have proven their commitment to these values and made a strong claim for creating a secure foundation for decentralised value management and opens up the doors for a paradigm shifting technologies and interactions powered by blockchain.
+</p>
+</div>
+</div>
+<div id="outline-container-orgbbb7eef" class="outline-4">
+<h4 id="orgbbb7eef"><span class="section-number-4">3.2.3</span> How?</h4>
+<div class="outline-text-4" id="text-3-2-3">
+<p>
+rizome.io aligns with technological stack of Haskell Foundation utilizing practices and tools from the Cardano core codebase and applying/integrating that into our infrastructure and solutions.
+</p>
+
+<p>
+With over a decade in Software Development and years in blockchain space we gained experience building and maintaining ifrastructures for large scale systems, with sweat and blood learnt importance of reprodusable builds and testability, which now serves to building exceptional user experiences, bringing to life paradigm shifting ideas.
+</p>
+</div>
+</div>
+<div id="outline-container-org8b89ccf" class="outline-4">
+<h4 id="org8b89ccf"><span class="section-number-4">3.2.4</span> What?</h4>
+<div class="outline-text-4" id="text-3-2-4">
+<p>
+roast.rizome.io is a stake pool being run on a dedicated Ryzen 7 4800H machine with redundant backup servers in a different location. This ensures high availability and resilience against power/connection outages. Low competitive fees ensure high return of assets.
+</p>
+</div>
+</div>
+<div id="outline-container-orga45936e" class="outline-4">
+<h4 id="orga45936e"><span class="section-number-4">3.2.5</span> Mission</h4>
+<div class="outline-text-4" id="text-3-2-5">
+</div>
+<ol class="org-ol">
+<li><a id="orge86470c"></a>rizome.io<br />
+<div class="outline-text-5" id="text-3-2-5-1">
+<blockquote>
+<p>
+Improve adoption of sustainable blockchain technologies by providing secure, scalable and innovative solutions to financial and social operation challenges.
+</p>
+</blockquote>
+</div>
+</li>
+
+<li><a id="org6361169"></a>roast.rizome.io<br />
+<div class="outline-text-5" id="text-3-2-5-2">
+<blockquote>
+<p>
+Provide a best ROI stake pool service for our delegators with an environmentally aware and responsible stake pool operation running on on renewable and green energy.
+</p>
+</blockquote>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+
+<div id="outline-container-org9b1b669" class="outline-3">
+<h3 id="org9b1b669"><span class="section-number-3">3.3</span> <span class="todo TODO">TODO</span> Roadmap</h3>
+</div>
+<div id="outline-container-orge803053" class="outline-3">
+<h3 id="orge803053"><span class="section-number-3">3.4</span> Roast Pool story.</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+The Roast Pool is operated to provide infrastructure for research and development of Cardano based projects. The minimum fees of 340 and the margin of 1% are set to create an competitive rewards for delegators until the pool builds reputation and and history of flawless uninterrupted operation.
+</p>
+
+<p>
+Current setup is hybrid of nodes running on the cloud to ensure reliability and local machines that provide additional redundancy and extensibility of the setup.
+</p>
+
+<p>
+As an environmentally aware organization we are aiming for a reduced footprint and carbon impact, thus reaching for the best efficiency of the hardware setup. Current hardware requirement for a Cardano node stake pool is 8GB of RAM, which is exactly what Raspberry Pi 4 is providing. We are currently testing reliability of such nodes and fine tuning the rig, when this configuration proves to keep up to high standards we would migrate the primary block production to the in-house solution. Until then the blocks are produced on the cloud provisioned machines.
+</p>
+
+<p>
+We are planning that pool rewards would cover the cost of running and provide enough resources to fund developer tools and open-source projects that we feel are in high demand with Cardano community. The emergence of Plutus, smart-contracts and native-tokens is driving the flow of developers and blockchain community to start using Cardano network. Our goal is to facilitate frictionless adoption by providing tools and knowledge for integration with Cardano blockchain.
+</p>
+
+<p>
+First year of operation in 2021 is primarily focused on the improving the infrastructure and tooling for the stake pool operation. This included documentation and learning materials, bootstrap scripts, monitoring configuration, ensuring security and resilience, ensuring autonomous operation.
+</p>
+</div>
+</div>
+<div id="outline-container-org826b7f3" class="outline-3">
+<h3 id="org826b7f3"><span class="section-number-3">3.5</span> Mission</h3>
+<div class="outline-text-3" id="text-3-5">
+<blockquote>
+<p>
+Of course I want my investments to give me a good roi but more importantly, I want a part in helping change this world 🌎 for the better. I truly believe that Cardano is the best vehicle for major positive change.
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://mailchimp.com/resources/startup-marketing-strategy/">https://mailchimp.com/resources/startup-marketing-strategy/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<a href="https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/">https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/</a>
+</p></div></div>
+
+
+</div>
+</div></div>
+<div id="postamble" class="status">
+<p class="author">Author: Andy Candy</p>
+<p class="date">Created: 2021-07-06 Tue 18:06</p>
+</div>
+</body>
+</html>
