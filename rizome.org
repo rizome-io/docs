@@ -12,33 +12,33 @@
 #+BEGIN: kanban :layout ("..." . 40) :match "market"
 | TODO                   | PROG               | DONE |
 |------------------------+--------------------+------|
-| [[file:rizome.org::*Catchy website tagline][Catchy website tagline]] |                    |      |
-| [[file:rizome.org::*Onboarding][Onboarding]]             |                    |      |
-|                        | [[file:rizome.org::*Marketing Strategy][Marketing Strategy]] |      |
+| [[*Catchy website tagline][Catchy website tagline]] |                    |      |
+| [[*Onboarding][Onboarding]]             |                    |      |
+|                        | [[*Marketing Strategy][Marketing Strategy]] |      |
 #+END:
 ** tactics
 #+BEGIN: kanban :layout ("..." . 40) :match "tech"
 | TODO                                  | PROG | DONE                 |
 |---------------------------------------+------+----------------------|
-| [[file:rizome.org::*redirect www.roast.rizome.io][redirect www.roast.rizome.io]]          |      |                      |
-| [[file:rizome.org::*stake pool delegation program][stake pool delegation program]]         |      |                      |
-| [[file:rizome.org::*structured seo data][structured seo data]]                   |      |                      |
-| [[file:rizome.org::*cardano essentials add rizome to list][cardano essentials add rizome to list]] |      |                      |
-| [[file:rizome.org::*nixos cardano make a module][nixos cardano make a module]]           |      |                      |
-|                                       |      | [[file:rizome.org::*SPF record][SPF record]]           |
-|                                       |      | [[file:rizome.org::*seo][seo {5/5}]]            |
-|                                       |      | [[file:rizome.org::*dnssec to roast desc][dnssec to roast desc]] |
-|                                       |      | [[file:rizome.org::*NUC Ryzen 7][NUC Ryzen 7]]          |
+| [[*redirect www.roast.rizome.io][redirect www.roast.rizome.io]]          |      |                      |
+| [[*stake pool delegation program][stake pool delegation program]]         |      |                      |
+| [[*structured seo data][structured seo data]]                   |      |                      |
+| [[*cardano essentials add rizome to list][cardano essentials add rizome to list]] |      |                      |
+| [[*nixos cardano make a module][nixos cardano make a module]]           |      |                      |
+|                                       |      | [[*SPF record][SPF record]]           |
+|                                       |      | [[*seo][seo {5/5}]]            |
+|                                       |      | [[*dnssec to roast desc][dnssec to roast desc]] |
+|                                       |      | [[*NUC Ryzen 7][NUC Ryzen 7]]          |
 #+END:
 ** visual
 #+BEGIN: kanban  :match "visual"
 | TODO                                        | PROG | DONE |
 |---------------------------------------------+------+------|
-| [[file:rizome.org::*rizome.io brandbook finalize][rizome.io brandbook finalize]]                |      |      |
-| [[file:rizome.org::*rizome.io web-design][rizome.io web-design]]                        |      |      |
-| [[file:rizome.org::*Color pallette for roast pool][Color pallette for roast pool]]               |      |      |
-| [[file:rizome.org::*Illustration style / mascot design examples][Illustration style / mascot design examples]] |      |      |
-| [[file:rizome.org::*roast pool web-design][roast pool web-design]]                       |      |      |
+| [[*rizome.io brandbook finalize][rizome.io brandbook finalize]]                |      |      |
+| [[*rizome.io web-design][rizome.io web-design]]                        |      |      |
+| [[*Color pallette for roast pool][Color pallette for roast pool]]               |      |      |
+| [[*Illustration style / mascot design examples][Illustration style / mascot design examples]] |      |      |
+| [[*roast pool web-design][roast pool web-design]]                       |      |      |
 #+END:
 
 
