@@ -10,11 +10,11 @@
 ** market
 
 #+BEGIN: kanban :layout ("..." . 40) :match "market"
-| TODO                   | PROG               | DONE |
-|------------------------+--------------------+------|
-| [[*Catchy website tagline][Catchy website tagline]] |                    |      |
-| [[*Onboarding][Onboarding]]             |                    |      |
-|                        | [[*Marketing Strategy][Marketing Strategy]] |      |
+| TODO | PROG                   | DONE |
+|------+------------------------+------|
+|      | [[*Catchy website tagline][Catchy website tagline]] |      |
+|      | [[*Onboarding][Onboarding]]             |      |
+|      | [[*Marketing Strategy][Marketing Strategy]]     |      |
 #+END:
 ** tactics
 #+BEGIN: kanban :layout ("..." . 40) :match "tech"
@@ -32,13 +32,13 @@
 #+END:
 ** visual
 #+BEGIN: kanban  :match "visual"
-| TODO                                        | PROG | DONE |
-|---------------------------------------------+------+------|
-| [[*rizome.io brandbook finalize][rizome.io brandbook finalize]]                |      |      |
-| [[*rizome.io web-design][rizome.io web-design]]                        |      |      |
-| [[*Color pallette for roast pool][Color pallette for roast pool]]               |      |      |
-| [[*Illustration style / mascot design examples][Illustration style / mascot design examples]] |      |      |
-| [[*roast pool web-design][roast pool web-design]]                       |      |      |
+| TODO                                        | PROG                         | DONE |
+|---------------------------------------------+------------------------------+------|
+|                                             | [[*rizome.io brandbook finalize][rizome.io brandbook finalize]] |      |
+|                                             | [[*rizome.io web-design][rizome.io web-design]]         |      |
+| [[*Color pallette for roast pool][Color pallette for roast pool]]               |                              |      |
+| [[*Illustration style / mascot design examples][Illustration style / mascot design examples]] |                              |      |
+| [[*roast pool web-design][roast pool web-design]]                       |                              |      |
 #+END:
 
 
@@ -72,17 +72,17 @@ SCHEDULED: <2021-04-07 Wed>
 ** DONE NUC Ryzen 7
 4800H 8 Core 16 thread 32Gb
 * Marketing :market:
-** TODO Catchy website tagline
+** PROG Catchy website tagline
 DEADLINE: <2021-07-06 Tue 17:00>
 *** Architecture for distributed ledger tech
 We provide reliable design and infrastructure solutions for projects powered by blockchain.
 *** Blockchain Consulting, Reseach & Solutions
-** TODO Onboarding
+** PROG Onboarding
 ** PROG Marketing Strategy
 
 * Visual communication :karin:web:visual:
-** TODO rizome.io brandbook finalize
-** TODO rizome.io web-design
+** PROG rizome.io brandbook finalize
+** PROG rizome.io web-design
 ** TODO Color pallette for roast pool
 ** TODO Illustration style / mascot design examples
 ** TODO roast pool web-design
