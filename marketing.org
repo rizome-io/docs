@@ -21,7 +21,7 @@ To be expanded and more specific
 **** [ ] collect emails
 **** [ ] quick overview
 *** Social
-**** [ ] scheduling posts
+**** [ ] scheduled posts
 **** [ ] engaging twitter with questions / contraversial statements
 **** [ ] reddit posts
 **** [ ] medium posts
@@ -38,16 +38,16 @@ denotes directly acquired customers
 ** Target Audience
 highlights two primary segments.
 *** Ada holders
-**** transparent tech stack
-**** dedicated on premise hardware
-**** redundant backup servers
-**** Good cause - low carbon footprint, higher vision (rizome garden)
-**** no clear benefit compared to other pools
+**** Transparent tech stack
+**** Dedicated on-site hardware
+**** Additional backup servers to ensure zero downtime and overcome network outages
+**** Good cause - low carbon footprint, idealistic future vision with the aim of implementing a fully green operation (rizome garden)
+**** No clear benefit compared to other pools
 *** Independent investors that are aware of crypto but not necessary into Ada
 **** High risk advetureous
 **** Fast ROA (+5% per 2 weeks)
 *** TODO Market niche
-describe a narrow segment within target audience.
+Dscribe a narrow segment within our target audience.
 
 * Rizome.io
 ** Headlines
@@ -56,27 +56,30 @@ describe a narrow segment within target audience.
 *** IDEA bridging the gap for business use case of DLT
 ** TODO Roadmap
 ** Roast Pool story.
-The Roast Pool is operated to provide infrastructure for research and development of Cardano based projects. The minimum fees of 340 and the margin of 1% are set to create an competitive rewards for delegators until the pool builds reputation and and history of flawless uninterrupted operation.
+The Roast Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
 
-Current setup is hybrid of nodes running on the cloud to ensure reliability and local machines that provide additional redundancy and extensibility of the setup.
+The current setup is a hybrid of nodes running on the cloud to ensure reliability. Additional local machines provide extra security and the potential for continuously expanding the operation.
 
-As an environmentally aware organization we are aiming for a reduced footprint and carbon impact, thus reaching for the best efficiency of the hardware setup. Current hardware requirement for a Cardano node stake pool is 8GB of RAM, which is exactly what Raspberry Pi 4 is providing. We are currently testing reliability of such nodes and fine tuning the rig, when this configuration proves to keep up to high standards we would migrate the primary block production to the in-house solution. Until then the blocks are produced on the cloud provisioned machines.
+As an environmentally aware organization, we make it our top priority to ensure a minimal carbon impact. Our hardware setup is optimized with that in mind, thus reaching a superb efficiency of operation while also fulfilling the requirements for a Cardano node stake pool.
+We are currently fine-tuning the setup to make sure that it keeps up to the high standards we have set as a company. We plan to migrate the primary block production to our in-house solution as soon as we have completed our testing phase. Until then, we are using state-of-the-art cloud-provisioned machines.
 
-We are planning that pool rewards would cover the cost of running and provide enough resources to fund developer tools and open-source projects that we feel are in high demand with Cardano community. The emergence of Plutus, smart-contracts and native-tokens is driving the flow of developers and blockchain community to start using Cardano network. Our goal is to facilitate frictionless adoption by providing tools and knowledge for integration with Cardano blockchain.
+We plan that the pool rewards will cover the operating costs and provide enough resources to fund additional developer tools. We also aim to invest in open-source projects that we feel are in high demand within the Cardano community. The emergence of Plutus, smart contracts, and native-tokens is driving the flow of developers and the blockchain community to start using the Cardano network. Our goal is to facilitate a smooth adoption by providing excellent tools and the know-how required for integrating with the Cardano blockchain
 
-First year of operation in 2021 is primarily focused on the improving the infrastructure and tooling for the stake pool operation. This included documentation and learning materials, bootstrap scripts, monitoring configuration, ensuring security and resilience, ensuring autonomous operation.
+In 2021 we are primarily focused on improving the infrastructure and tools for the stake pool operation. That envelops the development of documentation, learning materials, bootstrap scripts, monitoring configurations, ensuring security, resilience, and an overall smooth autonomous operation.
+
 ** Rizome.io Brand awareness
 *** Why?
-purpose, cause, belief. Why company exists?
-We believe that strong theoretical foundation and planning is the bedrock for a sustainable and reliable systems. This is why we decided to support Cardano project - they follow formal specifications, peer review protocols and scientific methodology in development. [fn:2]
+Purpose, cause, and belief. Why does the company exist?
+We believe that a strong theoretical foundation and forward-thinking planning skills are the bedrock for a sustainable and reliable system. That is why we decided to support the Cardano project - it follows formal specifications, peer-reviewed protocols, and a scientific methodology in its development. [fn:2]
 
-With years of successful work, deep research and timely updates behind they have proven their commitment to these values and made a strong claim for creating a secure foundation for decentralised value management and opens up the doors for a paradigm shifting technologies and interactions powered by blockchain.
+Years of successful work, deep research, and timely updates behind the Cardano technology have proven a meticulous commitment to high values. It established a powerful direction for creating a secure foundation for decentralized value management that is set to open up the doors for paradigm-shifting technologies and interactions powered by blockchain.
 *** How?
-rizome.io aligns with technological stack of Haskell Foundation utilizing practices and tools from the Cardano core codebase and applying/integrating that into our infrastructure and solutions.
+Rizome.io aligns with the technological stack of the Haskell Foundation that utilizes the practices and tools from the Cardano core codebase. We embrace and apply these to our infrastructure and tech solutions.
 
-With over a decade in Software Development and years in blockchain space we gained experience building and maintaining ifrastructures for large scale systems, with sweat and blood learnt importance of reprodusable builds and testability, which now serves to building exceptional user experiences, bringing to life paradigm shifting ideas.
+With over a decade of experience gained in software development and years actively involved in the blockchain space, we have proudly earned the expertise necessary for building and maintaining infrastructures for large-scale systems. Rizome.io represents the fruition of hard work and scrupulous study that lead us to our core values. We especially highlight the importance of reproducible builds and flexible testability. After a long journey of dedication, we are excited to provide our users with an exceptional user experience that breathes life into paradigm-shifting ideas.
+
 *** What?
-roast.rizome.io is a stake pool being run on a dedicated Ryzen 7 4800H machine with redundant backup servers in a different location. This ensures high availability and resilience against power/connection outages. Low competitive fees ensure high return of assets.
+Roast.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations. We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
 
 * Footnotes
 [fn:2] https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/
