@@ -1,4 +1,5 @@
-#+TITLE: rizome.io marketing path
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+TITLE: Rizome Communication
 * Marketing Checklist
 ** Marketing strategy
 This section outlines guidelines for creating marketing strategy. [fn:1]
@@ -47,27 +48,32 @@ highlights two primary segments.
 **** High risk advetureous
 **** Fast ROA (+5% per 2 weeks)
 *** TODO Market niche
-Dscribe a narrow segment within our target audience.
+Describe a narrow segment within our target audience.
 
 * Rizome.io
 ** Headlines
 *** Blockchain Consulting, Reseach & Solutions
+*** Architecture for distributed ledger tech
+We provide reliable design and infrastructure solutions for projects powered by blockchain.
+
 ** TODO Value proposition
+DEADLINE: <2021-07-09 Fri>
 *** IDEA bridging the gap for business use case of DLT
-** TODO Roadmap
-** Roast Pool story.
-The Roast Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
+*** Mission
+**** Reference: Cardano :noexport:
+#+begin_quote
+We want Cardano to become the future financial and social operation system for the generations to come.
+#+end_quote
+**** rizome.io
+#+begin_quote
+Improve adoption of sustainable blockchain technologies by providing secure, scalable and innovative solutions to financial and social operation challenges.
+#+end_quote
 
-The current setup is a hybrid of nodes running on the cloud to ensure reliability. Additional local machines provide extra security and the potential for continuously expanding the operation.
+**** roast.rizome.io
+#+begin_quote
+Provide a best ROI stake pool service for our delegators with an environmentally aware and responsible stake pool operation running on on renewable and green energy.
+#+end_quote
 
-As an environmentally aware organization, we make it our top priority to ensure a minimal carbon impact. Our hardware setup is optimized with that in mind, thus reaching a superb efficiency of operation while also fulfilling the requirements for a Cardano node stake pool.
-We are currently fine-tuning the setup to make sure that it keeps up to the high standards we have set as a company. We plan to migrate the primary block production to our in-house solution as soon as we have completed our testing phase. Until then, we are using state-of-the-art cloud-provisioned machines.
-
-We plan that the pool rewards will cover the operating costs and provide enough resources to fund additional developer tools. We also aim to invest in open-source projects that we feel are in high demand within the Cardano community. The emergence of Plutus, smart contracts, and native-tokens is driving the flow of developers and the blockchain community to start using the Cardano network. Our goal is to facilitate a smooth adoption by providing excellent tools and the know-how required for integrating with the Cardano blockchain
-
-In 2021 we are primarily focused on improving the infrastructure and tools for the stake pool operation. That envelops the development of documentation, learning materials, bootstrap scripts, monitoring configurations, ensuring security, resilience, and an overall smooth autonomous operation.
-
-** Rizome.io Brand awareness
 *** Why?
 Purpose, cause, and belief. Why does the company exist?
 We believe that a strong theoretical foundation and forward-thinking planning skills are the bedrock for a sustainable and reliable system. That is why we decided to support the Cardano project - it follows formal specifications, peer-reviewed protocols, and a scientific methodology in its development. [fn:2]
@@ -81,7 +87,30 @@ With over a decade of experience gained in software development and years active
 *** What?
 Roast.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations. We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
 
+
+** TODO Roadmap
+** Roast Pool story.
+The Roast Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
+
+The current setup is a hybrid of nodes running on the cloud to ensure reliability. Additional local machines provide extra security and the potential for continuously expanding the operation.
+
+As an environmentally aware organization, we make it our top priority to ensure a minimal carbon impact. Our hardware setup is optimized with that in mind, thus reaching a superb efficiency of operation while also fulfilling the requirements for a Cardano node stake pool.
+We are currently fine-tuning the setup to make sure that it keeps up to the high standards we have set as a company. We plan to migrate the primary block production to our in-house solution as soon as we have completed our testing phase. Until then, we are using state-of-the-art cloud-provisioned machines.
+
+We plan that the pool rewards will cover the operating costs and provide enough resources to fund additional developer tools. We also aim to invest in open-source projects that we feel are in high demand within the Cardano community. The emergence of Plutus, smart contracts, and native-tokens is driving the flow of developers and the blockchain community to start using the Cardano network. Our goal is to facilitate a smooth adoption by providing excellent tools and the know-how required for integrating with the Cardano blockchain
+
+In 2021 we are primarily focused on improving the infrastructure and tools for the stake pool operation. That envelops the development of documentation, learning materials, bootstrap scripts, monitoring configurations, ensuring security, resilience, and an overall smooth autonomous operation.
+
+** Mission
+#+begin_quote
+Of course I want my investments to give me a good roi but more importantly, I want a part in helping change this world 🌎 for the better. I truly believe that Cardano is the best vehicle for major positive change.
+
+#+end_quote
+[fn:3]
+
 * Footnotes
+
+[fn:3] [[https://www.youtube.com/watch?v=K4i-rTNyBWE][The Cardano Foundation Strategy 2021 - YouTube]]
 [fn:2] https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/
 
 [fn:1] https://mailchimp.com/resources/startup-marketing-strategy/
