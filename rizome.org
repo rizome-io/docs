@@ -10,35 +10,41 @@
 ** market
 
 #+BEGIN: kanban :layout ("..." . 40) :match "market"
-| TODO | PROG                   | DONE |
-|------+------------------------+------|
-|      | [[*Catchy website tagline][Catchy website tagline]] |      |
-|      | [[*Onboarding][Onboarding]]             |      |
-|      | [[*Marketing Strategy][Marketing Strategy]]     |      |
+| TODO                                                                                                   | PROG                                                                       | DONE                                         |
+|--------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+----------------------------------------------|
+|                                                                                                        | [[*Catchy website tagline][Catchy website tagline {50%}]] |                                              |
+|                                                                                                        |                                                                            | [[*rizome.io][rizome.io]]   |
+| [[*tagline lucid][tagline lucid]]                                                     |                                                                            |                                              |
+|                                                                                                        | [[*Marketing Strategy][Marketing Strategy {0%}]]          |                                              |
+| [[*Mission & vision for _lucid_][Mission & vision for _lucid_]]                       |                                                                            |                                              |
+| [[*Tagline & short description for _lucid_][Tagline & short description for _lucid_]] |                                                                            |                                              |
+| [[*What is unique about _lucid pool_][What is unique about _lucid pool_]]             |                                                                            |                                              |
+| [[*intro reddit post about _lucid_][intro reddit post about _lucid_]]                 |                                                                            |                                              |
+|                                                                                                        |                                                                            | [[*Onboarding][Onboarding]] |
 #+END:
 ** tactics
 #+BEGIN: kanban :layout ("..." . 40) :match "tech"
-| TODO                                  | PROG | DONE                 |
-|---------------------------------------+------+----------------------|
-| [[*redirect www.roast.rizome.io][redirect www.roast.rizome.io]]          |      |                      |
-| [[*stake pool delegation program][stake pool delegation program]]         |      |                      |
-| [[*structured seo data][structured seo data]]                   |      |                      |
-| [[*cardano essentials add rizome to list][cardano essentials add rizome to list]] |      |                      |
-| [[*nixos cardano make a module][nixos cardano make a module]]           |      |                      |
-|                                       |      | [[*SPF record][SPF record]]           |
-|                                       |      | [[*seo][seo {5/5}]]            |
-|                                       |      | [[*dnssec to roast desc][dnssec to roast desc]] |
-|                                       |      | [[*NUC Ryzen 7][NUC Ryzen 7]]          |
+| TODO                                                                                               | PROG | DONE                                                             |
+|----------------------------------------------------------------------------------------------------+------+------------------------------------------------------------------|
+| [[*redirect www.roast.rizome.io][redirect www.roast.rizome.io]]                   |      |                                                                  |
+| [[*stake pool delegation program][stake pool delegation program]]                 |      |                                                                  |
+| [[*structured seo data][structured seo data]]                                     |      |                                                                  |
+| [[*cardano essentials add rizome to list][cardano essentials add rizome to list]] |      |                                                                  |
+| [[*nixos cardano make a module][nixos cardano make a module]]                     |      |                                                                  |
+|                                                                                                    |      | [[*SPF record][SPF record]]                     |
+|                                                                                                    |      | [[*seo][seo {5/5}]]                             |
+|                                                                                                    |      | [[*dnssec to roast desc][dnssec to roast desc]] |
+|                                                                                                    |      | [[*NUC Ryzen 7][NUC Ryzen 7]]                   |
 #+END:
 ** visual
 #+BEGIN: kanban  :match "visual"
-| TODO                                        | PROG                         | DONE |
-|---------------------------------------------+------------------------------+------|
-|                                             | [[*rizome.io brandbook finalize][rizome.io brandbook finalize]] |      |
-|                                             | [[*rizome.io web-design][rizome.io web-design]]         |      |
-| [[*Color pallette for roast pool][Color pallette for roast pool]]               |                              |      |
-| [[*Illustration style / mascot design examples][Illustration style / mascot design examples]] |                              |      |
-| [[*roast pool web-design][roast pool web-design]]                       |                              |      |
+| TODO                                                    | PROG                                                                                          | DONE |
+|---------------------------------------------------------+-----------------------------------------------------------------------------------------------+------|
+|                                                         | [[*rizome.io brandbook finalize][rizome.io brandbook finalize]]                               |      |
+|                                                         | [[*rizome.io web-design][rizome.io web-design]]                                               |      |
+| [[*Color pallette for lucid][Color pallette for lucid]] |                                                                                               |      |
+|                                                         | [[*Illustration style / mascot design examples][Illustration style / mascot design examples]] |      |
+| [[*lucid pool web-design][lucid pool web-design]]       |                                                                                               |      |
 #+END:
 
 
@@ -72,17 +78,21 @@ SCHEDULED: <2021-04-07 Wed>
 ** DONE NUC Ryzen 7
 4800H 8 Core 16 thread 32Gb
 * Marketing :market:
-** PROG Catchy website tagline
-DEADLINE: <2021-07-06 Tue 17:00>
-*** Architecture for distributed ledger tech
+** PROG Catchy website tagline [50%]
+DEADLINE: <2021-07-09 Fri 17:00>
+*** DONE rizome.io
+**** Architecture for distributed ledger tech
 We provide reliable design and infrastructure solutions for projects powered by blockchain.
-*** Blockchain Consulting, Reseach & Solutions
-** PROG Onboarding
-** PROG Marketing Strategy
-
+*** TODO tagline lucid                          :karol:
+** PROG Marketing Strategy [0%]                  :lucid:
+*** TODO Mission & vision for _lucid_
+*** TODO Tagline & short description for _lucid_
+*** TODO What is unique about _lucid pool_
+*** TODO intro reddit post about _lucid_
+** DONE Onboarding
 * Visual communication :karin:web:visual:
 ** PROG rizome.io brandbook finalize
 ** PROG rizome.io web-design
-** TODO Color pallette for roast pool
-** TODO Illustration style / mascot design examples
-** TODO roast pool web-design
+** TODO Color pallette for lucid
+** PROG Illustration style / mascot design examples
+** TODO lucid pool web-design
