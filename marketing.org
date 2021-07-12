@@ -51,8 +51,8 @@ To be expanded and more specific
 **** videos
 **** [ ] [#A] infographics
 ** Measure success of marketing
-*** analytics.google.com (roastedstakes@gmail.com)
-tracks interactions with website (rizome.io and roast.rizome.io)
+*** analytics.google.com (lucidedstakes@gmail.com)
+tracks interactions with website (rizome.io and lucid.rizome.io)
 *** Delegator count and delegation amount
 denotes directly acquired customers
 * Marketing
@@ -89,7 +89,7 @@ We want Cardano to become the future financial and social operation system for t
 Improve adoption of sustainable blockchain technologies by providing secure, scalable and innovative solutions to financial and social operation challenges.
 #+end_quote
 
-**** roast.rizome.io
+**** lucid.rizome.io
 #+begin_quote
 Provide a best ROI stake pool service for our delegators with an environmentally aware and responsible stake pool operation running on on renewable and green energy.
 #+end_quote
@@ -108,13 +108,13 @@ We especially highlight the importance of reproducible builds and flexible testa
 After a long journey of dedication, we are excited to provide our users with an exceptional user experience that breathes life into paradigm-shifting ideas.
 
 *** What?
-Roast.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations.
+Lucid.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations.
 We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
 
 
 ** TODO Roadmap
-** Roast Pool story.
-The Roast Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
+** Lucid Pool story.
+The Lucid Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
 
 The current setup is a hybrid of nodes running on the cloud to ensure reliability. Additional local machines provide extra security and the potential for continuously expanding the operation.
 
