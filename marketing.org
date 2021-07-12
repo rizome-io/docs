@@ -95,17 +95,21 @@ Provide a best ROI stake pool service for our delegators with an environmentally
 #+end_quote
 
 *** Why?
-Purpose, cause, and belief. Why does the company exist?
 We believe that a strong theoretical foundation and forward-thinking planning skills are the bedrock for a sustainable and reliable system. That is why we decided to support the Cardano project - it follows formal specifications, peer-reviewed protocols, and a scientific methodology in its development. [fn:2]
 
 Years of successful work, deep research, and timely updates behind the Cardano technology have proven a meticulous commitment to high values. It established a powerful direction for creating a secure foundation for decentralized value management that is set to open up the doors for paradigm-shifting technologies and interactions powered by blockchain.
 *** How?
-Rizome.io aligns with the technological stack of the Haskell Foundation that utilizes the practices and tools from the Cardano core codebase. We embrace and apply these to our infrastructure and tech solutions.
+Rizome.io aligns with the technological stack of the Cardano Foundation that utilizes the practices and tools from the Cardano core codebase.
+We embrace and apply these to our infrastructure and tech solutions.
 
-With over a decade of experience gained in software development and years actively involved in the blockchain space, we have proudly earned the expertise necessary for building and maintaining infrastructures for large-scale systems. Rizome.io represents the fruition of hard work and scrupulous study that lead us to our core values. We especially highlight the importance of reproducible builds and flexible testability. After a long journey of dedication, we are excited to provide our users with an exceptional user experience that breathes life into paradigm-shifting ideas.
+With over a decade of experience gained in software development and years actively involved in the blockchain space, we have proudly earned the expertise necessary for building and maintaining infrastructures for large-scale systems.
+Rizome.io represents the fruition of hard work and scrupulous study that lead us to our core values.
+We especially highlight the importance of reproducible builds and flexible testability.
+After a long journey of dedication, we are excited to provide our users with an exceptional user experience that breathes life into paradigm-shifting ideas.
 
 *** What?
-Roast.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations. We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
+Roast.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations.
+We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
 
 
 ** TODO Roadmap
