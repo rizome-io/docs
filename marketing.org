@@ -1,6 +1,27 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 #+TITLE: Rizome Communication
 * Marketing Checklist
+** The Product
+We provide stake pool service for owners of Ada cryptocurrency.
+*** What is stake pool?
+A stake pool is a reliable server node that focuses on maintenance and holds the combined stake of various stakeholders in a single entity.
+Stake pools are responsible for processing transactions and producing new blocks and are at the core of the Cardano proof-of-stake protocol.[fn:4]
+
+Proof of stake is a more energy efficient alternative to commonly known Proof of Work algorithm.
+*** What is Cardano / Ada?
+Cardano is a decentralized third-generation proof-of-stake blockchain platform and home to the ada cryptocurrency.
+It has been designed from the ground up by a team of top engineers and academic experts.
+
+Cardano has a strong focus on sustainability, scalability, and transparency and is a fully open source project that aims to deliver an inclusive, fair, and resilient infrastructure for financial and social applications on a global scale. It is powered by Ouroboros, the ground-breaking proof-of-stake consensus protocol.[fn:5]
+*** Competitors
+- https://www.cardanowithpaul.com/
+  https://www.youtube.com/channel/UCcd9Ts46yNtjHayRPVLl0wQ
+
+- https://digitalfortress.online/
+  https://youtube.com/digitalfortress
+
+- https://cheapstaking.com/
+
 ** Marketing strategy
 This section outlines guidelines for creating marketing strategy. [fn:1]
 Can be improved and populated.
@@ -50,12 +71,6 @@ To be expanded and more specific
 **** blog posts
 **** videos
 **** [ ] [#A] infographics
-** Measure success of marketing
-*** analytics.google.com (lucidedstakes@gmail.com)
-tracks interactions with website (rizome.io and lucid.rizome.io)
-*** Delegator count and delegation amount
-denotes directly acquired customers
-* Marketing
 ** Target Audience
 highlights two primary segments.
 *** Ada holders
@@ -70,6 +85,11 @@ highlights two primary segments.
 *** TODO Market niche
 Describe a narrow segment within our target audience.
 
+** Measure success of marketing
+*** analytics.google.com (lucidedstakes@gmail.com)
+tracks interactions with website (rizome.io and lucid.rizome.io)
+*** Delegator count and delegation amount
+denotes directly acquired customers
 * Rizome.io
 ** Headlines
 *** Blockchain Consulting, Reseach & Solutions
@@ -133,6 +153,9 @@ Of course I want my investments to give me a good roi but more importantly, I wa
 [fn:3]
 
 * Footnotes
+
+[fn:5] https://docs.cardano.org/
+[fn:4] https://iohk.zendesk.com/hc/en-us/articles/900001951526-What-is-a-stake-pool-
 
 [fn:3] [[https://www.youtube.com/watch?v=K4i-rTNyBWE][The Cardano Foundation Strategy 2021 - YouTube]]
 [fn:2] https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/

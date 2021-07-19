@@ -3,14 +3,14 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2021-07-12 Mon 17:46 -->
+<!-- 2021-07-19 Mon 19:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Rizome Communication</title>
-<meta name="author" content="Andy Candy" />
+<meta name="author" content="Andrej Novikov" />
 <meta name="generator" content="Org Mode" />
-<style type="text/css">
- <!--/*--><![CDATA[/*><!--*/
+<style>
+  #content { max-width: 60em; margin: auto; }
   .title  { text-align: center;
              margin-bottom: .2em; }
   .subtitle { text-align: center;
@@ -31,8 +31,9 @@
   #postamble p, #preamble p { font-size: 90%; margin: .2em; }
   p.verse { margin-left: 3%; }
   pre {
-    border: 1px solid #ccc;
-    box-shadow: 3px 3px 3px #eee;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
     padding: 8pt;
     font-family: monospace;
     overflow: auto;
@@ -41,21 +42,21 @@
   pre.src {
     position: relative;
     overflow: auto;
-    padding-top: 1.2em;
   }
   pre.src:before {
     display: none;
     position: absolute;
-    background-color: white;
-    top: -10px;
-    right: 10px;
+    top: -8px;
+    right: 12px;
     padding: 3px;
-    border: 1px solid black;
+    color: #555;
+    background-color: #f2f2f299;
   }
   pre.src:hover:before { display: inline; margin-top: 14px;}
   /* Languages per Org manual */
   pre.src-asymptote:before { content: 'Asymptote'; }
   pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
   pre.src-C:before { content: 'C'; }
   /* pre.src-C++ doesn't work in CSS */
   pre.src-clojure:before { content: 'Clojure'; }
@@ -191,7 +192,6 @@
   .org-info-js_search-highlight
     { background-color: #ffff00; color: #000000; font-weight: bold; }
   .org-svg { width: 90%; }
-  /*]]>*/-->
 </style>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
@@ -204,123 +204,153 @@
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript">
-// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
-<!--/*--><![CDATA[/*><!--*/
-     function CodeHighlightOn(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.add("code-highlighted");
-         target.classList.add("code-highlighted");
-       }
-     }
-     function CodeHighlightOff(elem, id)
-     {
-       var target = document.getElementById(id);
-       if(null != target) {
-         elem.classList.remove("code-highlighted");
-         target.classList.remove("code-highlighted");
-       }
-     }
-    /*]]>*///-->
-// @license-end
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Rizome Communication</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org9e5f5b7">1. Marketing Checklist</a>
+<li><a href="#org9a5858d">1. Marketing Checklist</a>
 <ul>
-<li><a href="#orga494ae3">1.1. Marketing strategy</a>
+<li><a href="#orgf6815fa">1.1. The Product</a>
 <ul>
-<li><a href="#org35b39e1">1.1.1. Set goals</a></li>
-<li><a href="#orgae2fdd3">1.1.2. target audience</a></li>
-<li><a href="#orgca179a6">1.1.3. Find a place in the market</a></li>
+<li><a href="#org6c8920d">1.1.1. What is stake pool?</a></li>
+<li><a href="#org642c1ad">1.1.2. What is Cardano / Ada?</a></li>
+<li><a href="#orgf23080e">1.1.3. Competitors</a></li>
 </ul>
 </li>
-<li><a href="#orgd30fc7d">1.2. Reach</a>
+<li><a href="#orgecb5abc">1.2. Marketing strategy</a>
 <ul>
-<li><a href="#org93865ae">1.2.1. Landing Page</a></li>
-<li><a href="#org82a5cdf">1.2.2. Social</a></li>
-<li><a href="#org0f27169">1.2.3. Content Marketing</a></li>
+<li><a href="#org9a1f812">1.2.1. Set goals</a></li>
+<li><a href="#org37ec6c2">1.2.2. target audience</a></li>
+<li><a href="#org4ea0e20">1.2.3. Find a place in the market</a></li>
 </ul>
 </li>
-<li><a href="#org50806fa">1.3. Measure success of marketing</a>
+<li><a href="#org25d5d06">1.3. Reach</a>
 <ul>
-<li><a href="#orgce65f80">1.3.1. analytics.google.com (lucidedstakes@gmail.com)</a></li>
-<li><a href="#org0bc7c63">1.3.2. Delegator count and delegation amount</a></li>
+<li><a href="#orgee01d2a">1.3.1. Landing Page</a></li>
+<li><a href="#org85aab96">1.3.2. Social</a></li>
+<li><a href="#org75c2947">1.3.3. Content Marketing</a></li>
+</ul>
+</li>
+<li><a href="#orgb0e21a7">1.4. Target Audience</a>
+<ul>
+<li><a href="#org5859dad">1.4.1. Ada holders</a></li>
+<li><a href="#orgead7926">1.4.2. Independent investors that are aware of crypto but not necessary into Ada</a></li>
+<li><a href="#orgec9fc91">1.4.3. <span class="todo TODO">TODO</span> Market niche</a></li>
+</ul>
+</li>
+<li><a href="#orge346d37">1.5. Measure success of marketing</a>
+<ul>
+<li><a href="#org4a63cea">1.5.1. analytics.google.com (lucidedstakes@gmail.com)</a></li>
+<li><a href="#orgd43e5af">1.5.2. Delegator count and delegation amount</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org108ac53">2. Marketing</a>
+<li><a href="#orgefa6b04">2. Rizome.io</a>
 <ul>
-<li><a href="#org252a41c">2.1. Target Audience</a>
+<li><a href="#org16dfa3d">2.1. Headlines</a>
 <ul>
-<li><a href="#orgbb55b37">2.1.1. Ada holders</a></li>
-<li><a href="#org2160cd5">2.1.2. Independent investors that are aware of crypto but not necessary into Ada</a></li>
-<li><a href="#orgb4f118d">2.1.3. <span class="todo TODO">TODO</span> Market niche</a></li>
+<li><a href="#org7e68c16">2.1.1. Blockchain Consulting, Reseach &amp; Solutions</a></li>
+<li><a href="#orgb84b3c3">2.1.2. Architecture for distributed ledger tech</a></li>
 </ul>
 </li>
+<li><a href="#org3fa683c">2.2. <span class="todo TODO">TODO</span> Value proposition</a>
+<ul>
+<li><a href="#orgc18e2b5">2.2.1. <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</a></li>
+<li><a href="#org15f46c3">2.2.2. Mission</a></li>
+<li><a href="#orgbc313b2">2.2.3. Why?</a></li>
+<li><a href="#orgdb9c525">2.2.4. How?</a></li>
+<li><a href="#org4a6b042">2.2.5. What?</a></li>
 </ul>
 </li>
-<li><a href="#org8db7271">3. Rizome.io</a>
-<ul>
-<li><a href="#orga9c3931">3.1. Headlines</a>
-<ul>
-<li><a href="#org5d810ef">3.1.1. Blockchain Consulting, Reseach &amp; Solutions</a></li>
-<li><a href="#org1c36dea">3.1.2. Architecture for distributed ledger tech</a></li>
-</ul>
-</li>
-<li><a href="#org60cd911">3.2. <span class="todo TODO">TODO</span> Value proposition</a>
-<ul>
-<li><a href="#orgc8f9a65">3.2.1. <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</a></li>
-<li><a href="#orgcbe7f0d">3.2.2. Mission</a></li>
-<li><a href="#org45aa881">3.2.3. Why?</a></li>
-<li><a href="#orgb7c902c">3.2.4. How?</a></li>
-<li><a href="#org9a7828b">3.2.5. What?</a></li>
-</ul>
-</li>
-<li><a href="#orgeb93957">3.3. <span class="todo TODO">TODO</span> Roadmap</a></li>
-<li><a href="#org80c9839">3.4. Lucid Pool story.</a></li>
-<li><a href="#orgeeed6ac">3.5. Mission</a></li>
+<li><a href="#org384b513">2.3. <span class="todo TODO">TODO</span> Roadmap</a></li>
+<li><a href="#org4426551">2.4. Lucid Pool story.</a></li>
+<li><a href="#orgfe40eb7">2.5. Mission</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9e5f5b7" class="outline-2">
-<h2 id="org9e5f5b7"><span class="section-number-2">1</span> Marketing Checklist</h2>
+<div id="outline-container-org9a5858d" class="outline-2">
+<h2 id="org9a5858d"><span class="section-number-2">1.</span> Marketing Checklist</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orga494ae3" class="outline-3">
-<h3 id="orga494ae3"><span class="section-number-3">1.1</span> Marketing strategy</h3>
+<div id="outline-container-orgf6815fa" class="outline-3">
+<h3 id="orgf6815fa"><span class="section-number-3">1.1.</span> The Product</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-This section outlines guidelines for creating marketing strategy. <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+We provide stake pool service for owners of Ada cryptocurrency.
+</p>
+</div>
+<div id="outline-container-org6c8920d" class="outline-4">
+<h4 id="org6c8920d"><span class="section-number-4">1.1.1.</span> What is stake pool?</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<p>
+A stake pool is a reliable server node that focuses on maintenance and holds the combined stake of various stakeholders in a single entity.
+Stake pools are responsible for processing transactions and producing new blocks and are at the core of the Cardano proof-of-stake protocol.<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+</p>
+
+<p>
+Proof of stake is a more energy efficient alternative to commonly known Proof of Work algorithm.
+</p>
+</div>
+</div>
+<div id="outline-container-org642c1ad" class="outline-4">
+<h4 id="org642c1ad"><span class="section-number-4">1.1.2.</span> What is Cardano / Ada?</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+Cardano is a decentralized third-generation proof-of-stake blockchain platform and home to the ada cryptocurrency.
+It has been designed from the ground up by a team of top engineers and academic experts.
+</p>
+
+<p>
+Cardano has a strong focus on sustainability, scalability, and transparency and is a fully open source project that aims to deliver an inclusive, fair, and resilient infrastructure for financial and social applications on a global scale. It is powered by Ouroboros, the ground-breaking proof-of-stake consensus protocol.<sup><a id="fnr.2" class="footref" href="#fn.2" role="doc-backlink">2</a></sup>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf23080e" class="outline-4">
+<h4 id="orgf23080e"><span class="section-number-4">1.1.3.</span> Competitors</h4>
+<div class="outline-text-4" id="text-1-1-3">
+<ul class="org-ul">
+<li><a href="https://www.cardanowithpaul.com/">https://www.cardanowithpaul.com/</a>
+<a href="https://www.youtube.com/channel/UCcd9Ts46yNtjHayRPVLl0wQ">https://www.youtube.com/channel/UCcd9Ts46yNtjHayRPVLl0wQ</a></li>
+
+<li><a href="https://digitalfortress.online/">https://digitalfortress.online/</a>
+<a href="https://youtube.com/digitalfortress">https://youtube.com/digitalfortress</a></li>
+
+<li><a href="https://cheapstaking.com/">https://cheapstaking.com/</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgecb5abc" class="outline-3">
+<h3 id="orgecb5abc"><span class="section-number-3">1.2.</span> Marketing strategy</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+This section outlines guidelines for creating marketing strategy. <sup><a id="fnr.3" class="footref" href="#fn.3" role="doc-backlink">3</a></sup>
 Can be improved and populated.
 </p>
 </div>
-<div id="outline-container-org35b39e1" class="outline-4">
-<h4 id="org35b39e1"><span class="section-number-4">1.1.1</span> Set goals</h4>
-<div class="outline-text-4" id="text-1-1-1">
+<div id="outline-container-org9a1f812" class="outline-4">
+<h4 id="org9a1f812"><span class="section-number-4">1.2.1.</span> Set goals</h4>
+<div class="outline-text-4" id="text-1-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="org497045b"></a>raise brand awareness<br />
-<div class="outline-text-5" id="text-1-1-1-1">
+<li><a id="orga1eb059"></a>raise brand awareness<br />
+<div class="outline-text-5" id="text-1-2-1-1">
 <p>
 Communicate the brand vision and highlight our low fees through posts on Instagram, Facebook, Twitter, Medium, and Reddit. Develop regular content to post on these platforms. 
 </p>
 </div>
 </li>
 
-<li><a id="org233af53"></a>aqcuire new customers<br />
-<div class="outline-text-5" id="text-1-1-1-2">
+<li><a id="org46c358c"></a>aqcuire new customers<br />
+<div class="outline-text-5" id="text-1-2-1-2">
 <p>
 Social media presence - Reddit, Medium, Instagram, Twitter, and Facebook posts, paid ads, crypto influencer marketing campaigns. Engage in the comments, possibly enagage in discussions on popular crypto feeds. 
 </p>
@@ -330,33 +360,33 @@ Social media presence - Reddit, Medium, Instagram, Twitter, and Facebook posts, 
 </div>
 
 
-<div id="outline-container-orgae2fdd3" class="outline-4">
-<h4 id="orgae2fdd3"><span class="section-number-4">1.1.2</span> target audience</h4>
-<div class="outline-text-4" id="text-1-1-2">
+<div id="outline-container-org37ec6c2" class="outline-4">
+<h4 id="org37ec6c2"><span class="section-number-4">1.2.2.</span> target audience</h4>
+<div class="outline-text-4" id="text-1-2-2">
 <p>
 Crypto enthusiasts who are already involved in the space and looking for reliability / low fees. New users who are interested in crypto, but are hesitant to get started due to its environmental criticisms. People who think they need to invest a considerable amount to get started with Cardano stake pools. 
 </p>
 </div>
 
 <ol class="org-ol">
-<li><a id="org8be9049"></a>what are we offering to you?<br />
-<div class="outline-text-5" id="text-1-1-2-1">
+<li><a id="org1d3a777"></a>what are we offering to you?<br />
+<div class="outline-text-5" id="text-1-2-2-1">
 <p>
 We are supremely confident in our ability to provide a seamlessly working and transparent stake pool with a forward-thinking vision. We do not make compromises when it comes to our user-oriented policies, equipment, and technological solutions. We use high-grade hardware, as well as multiple backup servers to guarantee a smooth workflow. All of our inner company workings are available to our users to ensure complete trust in the company. 
 </p>
 </div>
 </li>
 
-<li><a id="orgba08516"></a>what makes us unique?<br />
-<div class="outline-text-5" id="text-1-1-2-2">
+<li><a id="org0910908"></a>what makes us unique?<br />
+<div class="outline-text-5" id="text-1-2-2-2">
 <p>
 Ideologically, we believe that Cardano has the potential to be a game-changer in the crypto space and beyond. However, its successful long-term implementation requires innovative solutions. We are aware of the main criticism that cryptocurrencies are encountering, namely the negative impact on the global carbon footprint. The environment is something that we are deeply passionate about. What makes us unique, is that we translate our hope for a bright future into action. X% of our proceeds are donated to support smart eco-friendly causes, such as planting new trees, educating people, and cleaning up polluted areas. We are also working to power our stake pool exclusively with renewable energy. You can access our plans for our Rizome / Lucid Garden here (LINK). By siding with us, you can rest assured that you will enjoy competitive fees, a maximum return on your assets, and aid the environment while doing so. 
 </p>
 </div>
 </li>
 
-<li><a id="orgf524362"></a>why would you choose us over competitors?<br />
-<div class="outline-text-5" id="text-1-1-2-3">
+<li><a id="org786c17c"></a>why would you choose us over competitors?<br />
+<div class="outline-text-5" id="text-1-2-2-3">
 <p>
 We see Rizome as an ideological movement, rather than just a company. Our approach combines a strong, philosophically motivated vision, eco-friendly technology, and an overall strive for aiding in the great challenge of creating a society in which humanity can access the most fulfillment. In our view, a fruitful future encompasses financial liberation, an ethically driven value system, and excellent education. We see the world and every creature as worthy of living respectably and freely. This may be a dream for now, but we will only reach it by placing one mindful step after another. Rizome aims to be a force that actively fuels the global shift for a better future by employing a pragmatically minded approach. That encompasses providing free education content, helping to replenish the environment, and proudly carrying the flag of a fully transparent stake pool that is powered exclusively with renewable energy. 
 </p>
@@ -364,73 +394,111 @@ We see Rizome as an ideological movement, rather than just a company. Our approa
 </li>
 
 
-<li><a id="org651bc19"></a>B2B -&gt; benefit to business  of certain size or within industry?<br /></li>
-<li><a id="orgf8ed0ff"></a>B2C -&gt; preferred audience based on location, demographics, or interests?<br /></li>
+<li><a id="org20fd92e"></a>B2B -&gt; benefit to business  of certain size or within industry?<br /></li>
+<li><a id="org075676d"></a>B2C -&gt; preferred audience based on location, demographics, or interests?<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgca179a6" class="outline-4">
-<h4 id="orgca179a6"><span class="section-number-4">1.1.3</span> Find a place in the market</h4>
-<div class="outline-text-4" id="text-1-1-3">
+<div id="outline-container-org4ea0e20" class="outline-4">
+<h4 id="org4ea0e20"><span class="section-number-4">1.2.3.</span> Find a place in the market</h4>
+<div class="outline-text-4" id="text-1-2-3">
 </div>
 <ol class="org-ol">
-<li><a id="org2369a55"></a>market research - too narrow focus? correct position to reach the right people.<br /></li>
+<li><a id="org4719e34"></a>market research - too narrow focus? correct position to reach the right people.<br /></li>
 </ol>
 </div>
 </div>
-<div id="outline-container-orgd30fc7d" class="outline-3">
-<h3 id="orgd30fc7d"><span class="section-number-3">1.2</span> Reach</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-org25d5d06" class="outline-3">
+<h3 id="org25d5d06"><span class="section-number-3">1.3.</span> Reach</h3>
+<div class="outline-text-3" id="text-1-3">
 <p>
 This section highlights the actionable items.
 To be expanded and more specific
 </p>
 </div>
-<div id="outline-container-org93865ae" class="outline-4">
-<h4 id="org93865ae"><span class="section-number-4">1.2.1</span> Landing Page</h4>
-<div class="outline-text-4" id="text-1-2-1">
-</div>
-<ol class="org-ol">
-<li><a id="org8c56ca6"></a><span class="todo ___">[ ]</span> collect emails<br /></li>
-<li><a id="org36d615e"></a><span class="todo ___">[ ]</span> quick overview<br /></li>
-</ol>
-</div>
-<div id="outline-container-org82a5cdf" class="outline-4">
-<h4 id="org82a5cdf"><span class="section-number-4">1.2.2</span> Social</h4>
-<div class="outline-text-4" id="text-1-2-2">
-</div>
-<ol class="org-ol">
-<li><a id="orgfbfa0e6"></a><span class="todo ___">[ ]</span> scheduled posts<br /></li>
-<li><a id="orge6201e9"></a><span class="todo ___">[ ]</span> engaging twitter with questions / contraversial statements<br /></li>
-<li><a id="org0049fdf"></a><span class="todo ___">[ ]</span> reddit posts<br /></li>
-<li><a id="orgd1f3d47"></a><span class="todo ___">[ ]</span> medium posts<br /></li>
-</ol>
-</div>
-<div id="outline-container-org0f27169" class="outline-4">
-<h4 id="org0f27169"><span class="section-number-4">1.2.3</span> Content Marketing</h4>
-<div class="outline-text-4" id="text-1-2-3">
-</div>
-<ol class="org-ol">
-<li><a id="org7bcc748"></a>blog posts<br /></li>
-<li><a id="org42aae5a"></a>videos<br /></li>
-<li><a id="orge3fd864"></a><span class="todo ___">[ ]</span> infographics<br /></li>
-</ol>
-</div>
-</div>
-<div id="outline-container-org50806fa" class="outline-3">
-<h3 id="org50806fa"><span class="section-number-3">1.3</span> Measure success of marketing</h3>
-<div class="outline-text-3" id="text-1-3">
-</div>
-<div id="outline-container-orgce65f80" class="outline-4">
-<h4 id="orgce65f80"><span class="section-number-4">1.3.1</span> analytics.google.com (lucidedstakes@gmail.com)</h4>
+<div id="outline-container-orgee01d2a" class="outline-4">
+<h4 id="orgee01d2a"><span class="section-number-4">1.3.1.</span> Landing Page</h4>
 <div class="outline-text-4" id="text-1-3-1">
+</div>
+<ol class="org-ol">
+<li><a id="org1a80c6d"></a><span class="todo ___">[ ]</span> collect emails<br /></li>
+<li><a id="org32a8780"></a><span class="todo ___">[ ]</span> quick overview<br /></li>
+</ol>
+</div>
+<div id="outline-container-org85aab96" class="outline-4">
+<h4 id="org85aab96"><span class="section-number-4">1.3.2.</span> Social</h4>
+<div class="outline-text-4" id="text-1-3-2">
+</div>
+<ol class="org-ol">
+<li><a id="org8449002"></a><span class="todo ___">[ ]</span> scheduled posts<br /></li>
+<li><a id="orgae89373"></a><span class="todo ___">[ ]</span> engaging twitter with questions / contraversial statements<br /></li>
+<li><a id="org3259372"></a><span class="todo ___">[ ]</span> reddit posts<br /></li>
+<li><a id="orga5d0bdd"></a><span class="todo ___">[ ]</span> medium posts<br /></li>
+</ol>
+</div>
+<div id="outline-container-org75c2947" class="outline-4">
+<h4 id="org75c2947"><span class="section-number-4">1.3.3.</span> Content Marketing</h4>
+<div class="outline-text-4" id="text-1-3-3">
+</div>
+<ol class="org-ol">
+<li><a id="org8b8d932"></a>blog posts<br /></li>
+<li><a id="orga996eb4"></a>videos<br /></li>
+<li><a id="org54615d2"></a><span class="todo ___">[ ]</span> infographics<br /></li>
+</ol>
+</div>
+</div>
+<div id="outline-container-orgb0e21a7" class="outline-3">
+<h3 id="orgb0e21a7"><span class="section-number-3">1.4.</span> Target Audience</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+highlights two primary segments.
+</p>
+</div>
+<div id="outline-container-org5859dad" class="outline-4">
+<h4 id="org5859dad"><span class="section-number-4">1.4.1.</span> Ada holders</h4>
+<div class="outline-text-4" id="text-1-4-1">
+</div>
+<ol class="org-ol">
+<li><a id="org9cf3366"></a>Transparent tech stack<br /></li>
+<li><a id="org4f57721"></a>Dedicated on-site hardware<br /></li>
+<li><a id="org86867fd"></a>Additional backup servers to ensure zero downtime and overcome network outages<br /></li>
+<li><a id="orgfb923b0"></a>Good cause - low carbon footprint, idealistic future vision with the aim of implementing a fully green operation (rizome garden)<br /></li>
+<li><a id="org2401dae"></a>No clear benefit compared to other pools<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgead7926" class="outline-4">
+<h4 id="orgead7926"><span class="section-number-4">1.4.2.</span> Independent investors that are aware of crypto but not necessary into Ada</h4>
+<div class="outline-text-4" id="text-1-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgd570904"></a>High risk advetureous<br /></li>
+<li><a id="org73d0961"></a>Fast ROA (+5% per 2 weeks)<br /></li>
+</ol>
+</div>
+<div id="outline-container-orgec9fc91" class="outline-4">
+<h4 id="orgec9fc91"><span class="section-number-4">1.4.3.</span> <span class="todo TODO">TODO</span> Market niche</h4>
+<div class="outline-text-4" id="text-1-4-3">
+<p>
+Describe a narrow segment within our target audience.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge346d37" class="outline-3">
+<h3 id="orge346d37"><span class="section-number-3">1.5.</span> Measure success of marketing</h3>
+<div class="outline-text-3" id="text-1-5">
+</div>
+<div id="outline-container-org4a63cea" class="outline-4">
+<h4 id="org4a63cea"><span class="section-number-4">1.5.1.</span> analytics.google.com (lucidedstakes@gmail.com)</h4>
+<div class="outline-text-4" id="text-1-5-1">
 <p>
 tracks interactions with website (rizome.io and lucid.rizome.io)
 </p>
 </div>
 </div>
-<div id="outline-container-org0bc7c63" class="outline-4">
-<h4 id="org0bc7c63"><span class="section-number-4">1.3.2</span> Delegator count and delegation amount</h4>
-<div class="outline-text-4" id="text-1-3-2">
+<div id="outline-container-orgd43e5af" class="outline-4">
+<h4 id="orgd43e5af"><span class="section-number-4">1.5.2.</span> Delegator count and delegation amount</h4>
+<div class="outline-text-4" id="text-1-5-2">
 <p>
 denotes directly acquired customers
 </p>
@@ -438,63 +506,20 @@ denotes directly acquired customers
 </div>
 </div>
 </div>
-<div id="outline-container-org108ac53" class="outline-2">
-<h2 id="org108ac53"><span class="section-number-2">2</span> Marketing</h2>
+<div id="outline-container-orgefa6b04" class="outline-2">
+<h2 id="orgefa6b04"><span class="section-number-2">2.</span> Rizome.io</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org252a41c" class="outline-3">
-<h3 id="org252a41c"><span class="section-number-3">2.1</span> Target Audience</h3>
+<div id="outline-container-org16dfa3d" class="outline-3">
+<h3 id="org16dfa3d"><span class="section-number-3">2.1.</span> Headlines</h3>
 <div class="outline-text-3" id="text-2-1">
-<p>
-highlights two primary segments.
-</p>
 </div>
-<div id="outline-container-orgbb55b37" class="outline-4">
-<h4 id="orgbb55b37"><span class="section-number-4">2.1.1</span> Ada holders</h4>
-<div class="outline-text-4" id="text-2-1-1">
+<div id="outline-container-org7e68c16" class="outline-4">
+<h4 id="org7e68c16"><span class="section-number-4">2.1.1.</span> Blockchain Consulting, Reseach &amp; Solutions</h4>
 </div>
-<ol class="org-ol">
-<li><a id="org17407fe"></a>Transparent tech stack<br /></li>
-<li><a id="org3ea974f"></a>Dedicated on-site hardware<br /></li>
-<li><a id="org6c7f431"></a>Additional backup servers to ensure zero downtime and overcome network outages<br /></li>
-<li><a id="orga543419"></a>Good cause - low carbon footprint, idealistic future vision with the aim of implementing a fully green operation (rizome garden)<br /></li>
-<li><a id="orga278d1b"></a>No clear benefit compared to other pools<br /></li>
-</ol>
-</div>
-<div id="outline-container-org2160cd5" class="outline-4">
-<h4 id="org2160cd5"><span class="section-number-4">2.1.2</span> Independent investors that are aware of crypto but not necessary into Ada</h4>
+<div id="outline-container-orgb84b3c3" class="outline-4">
+<h4 id="orgb84b3c3"><span class="section-number-4">2.1.2.</span> Architecture for distributed ledger tech</h4>
 <div class="outline-text-4" id="text-2-1-2">
-</div>
-<ol class="org-ol">
-<li><a id="orgc89ab97"></a>High risk advetureous<br /></li>
-<li><a id="orgbc1d1a6"></a>Fast ROA (+5% per 2 weeks)<br /></li>
-</ol>
-</div>
-<div id="outline-container-orgb4f118d" class="outline-4">
-<h4 id="orgb4f118d"><span class="section-number-4">2.1.3</span> <span class="todo TODO">TODO</span> Market niche</h4>
-<div class="outline-text-4" id="text-2-1-3">
-<p>
-Describe a narrow segment within our target audience.
-</p>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org8db7271" class="outline-2">
-<h2 id="org8db7271"><span class="section-number-2">3</span> Rizome.io</h2>
-<div class="outline-text-2" id="text-3">
-</div>
-<div id="outline-container-orga9c3931" class="outline-3">
-<h3 id="orga9c3931"><span class="section-number-3">3.1</span> Headlines</h3>
-<div class="outline-text-3" id="text-3-1">
-</div>
-<div id="outline-container-org5d810ef" class="outline-4">
-<h4 id="org5d810ef"><span class="section-number-4">3.1.1</span> Blockchain Consulting, Reseach &amp; Solutions</h4>
-</div>
-<div id="outline-container-org1c36dea" class="outline-4">
-<h4 id="org1c36dea"><span class="section-number-4">3.1.2</span> Architecture for distributed ledger tech</h4>
-<div class="outline-text-4" id="text-3-1-2">
 <p>
 We provide reliable design and infrastructure solutions for projects powered by blockchain.
 </p>
@@ -502,20 +527,20 @@ We provide reliable design and infrastructure solutions for projects powered by 
 </div>
 </div>
 
-<div id="outline-container-org60cd911" class="outline-3">
-<h3 id="org60cd911"><span class="section-number-3">3.2</span> <span class="todo TODO">TODO</span> Value proposition</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org3fa683c" class="outline-3">
+<h3 id="org3fa683c"><span class="section-number-3">2.2.</span> <span class="todo TODO">TODO</span> Value proposition</h3>
+<div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgc8f9a65" class="outline-4">
-<h4 id="orgc8f9a65"><span class="section-number-4">3.2.1</span> <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</h4>
+<div id="outline-container-orgc18e2b5" class="outline-4">
+<h4 id="orgc18e2b5"><span class="section-number-4">2.2.1.</span> <span class="todo IDEA">IDEA</span> bridging the gap for business use case of DLT</h4>
 </div>
-<div id="outline-container-orgcbe7f0d" class="outline-4">
-<h4 id="orgcbe7f0d"><span class="section-number-4">3.2.2</span> Mission</h4>
-<div class="outline-text-4" id="text-3-2-2">
+<div id="outline-container-org15f46c3" class="outline-4">
+<h4 id="org15f46c3"><span class="section-number-4">2.2.2.</span> Mission</h4>
+<div class="outline-text-4" id="text-2-2-2">
 </div>
 <ol class="org-ol">
-<li><a id="org86de32a"></a>rizome.io<br />
-<div class="outline-text-5" id="text-3-2-2-1">
+<li><a id="orga274be8"></a>rizome.io<br />
+<div class="outline-text-5" id="text-2-2-2-1">
 <blockquote>
 <p>
 Improve adoption of sustainable blockchain technologies by providing secure, scalable and innovative solutions to financial and social operation challenges.
@@ -524,8 +549,8 @@ Improve adoption of sustainable blockchain technologies by providing secure, sca
 </div>
 </li>
 
-<li><a id="org775cfa6"></a>lucid.rizome.io<br />
-<div class="outline-text-5" id="text-3-2-2-2">
+<li><a id="org83e2a74"></a>lucid.rizome.io<br />
+<div class="outline-text-5" id="text-2-2-2-2">
 <blockquote>
 <p>
 Provide a best ROI stake pool service for our delegators with an environmentally aware and responsible stake pool operation running on on renewable and green energy.
@@ -536,11 +561,11 @@ Provide a best ROI stake pool service for our delegators with an environmentally
 </ol>
 </div>
 
-<div id="outline-container-org45aa881" class="outline-4">
-<h4 id="org45aa881"><span class="section-number-4">3.2.3</span> Why?</h4>
-<div class="outline-text-4" id="text-3-2-3">
+<div id="outline-container-orgbc313b2" class="outline-4">
+<h4 id="orgbc313b2"><span class="section-number-4">2.2.3.</span> Why?</h4>
+<div class="outline-text-4" id="text-2-2-3">
 <p>
-We believe that a strong theoretical foundation and forward-thinking planning skills are the bedrock for a sustainable and reliable system. That is why we decided to support the Cardano project - it follows formal specifications, peer-reviewed protocols, and a scientific methodology in its development. <sup><a id="fnr.2" class="footref" href="#fn.2">2</a></sup>
+We believe that a strong theoretical foundation and forward-thinking planning skills are the bedrock for a sustainable and reliable system. That is why we decided to support the Cardano project - it follows formal specifications, peer-reviewed protocols, and a scientific methodology in its development. <sup><a id="fnr.4" class="footref" href="#fn.4" role="doc-backlink">4</a></sup>
 </p>
 
 <p>
@@ -548,9 +573,9 @@ Years of successful work, deep research, and timely updates behind the Cardano t
 </p>
 </div>
 </div>
-<div id="outline-container-orgb7c902c" class="outline-4">
-<h4 id="orgb7c902c"><span class="section-number-4">3.2.4</span> How?</h4>
-<div class="outline-text-4" id="text-3-2-4">
+<div id="outline-container-orgdb9c525" class="outline-4">
+<h4 id="orgdb9c525"><span class="section-number-4">2.2.4.</span> How?</h4>
+<div class="outline-text-4" id="text-2-2-4">
 <p>
 Rizome.io aligns with the technological stack of the Cardano Foundation that utilizes the practices and tools from the Cardano core codebase.
 We embrace and apply these to our infrastructure and tech solutions.
@@ -565,9 +590,9 @@ After a long journey of dedication, we are excited to provide our users with an 
 </div>
 </div>
 
-<div id="outline-container-org9a7828b" class="outline-4">
-<h4 id="org9a7828b"><span class="section-number-4">3.2.5</span> What?</h4>
-<div class="outline-text-4" id="text-3-2-5">
+<div id="outline-container-org4a6b042" class="outline-4">
+<h4 id="org4a6b042"><span class="section-number-4">2.2.5.</span> What?</h4>
+<div class="outline-text-4" id="text-2-2-5">
 <p>
 Lucid.rizome.io is a stake pool running on a dedicated Ryzen 7 4800H machine with additional backup servers in multiple locations.
 We are proud to guarantee high availability and resilience against power and connection outages. Our competitive fees ensure a high return of assets for our users.
@@ -577,12 +602,12 @@ We are proud to guarantee high availability and resilience against power and con
 </div>
 
 
-<div id="outline-container-orgeb93957" class="outline-3">
-<h3 id="orgeb93957"><span class="section-number-3">3.3</span> <span class="todo TODO">TODO</span> Roadmap</h3>
+<div id="outline-container-org384b513" class="outline-3">
+<h3 id="org384b513"><span class="section-number-3">2.3.</span> <span class="todo TODO">TODO</span> Roadmap</h3>
 </div>
-<div id="outline-container-org80c9839" class="outline-3">
-<h3 id="org80c9839"><span class="section-number-3">3.4</span> Lucid Pool story.</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-org4426551" class="outline-3">
+<h3 id="org4426551"><span class="section-number-3">2.4.</span> Lucid Pool story.</h3>
+<div class="outline-text-3" id="text-2-4">
 <p>
 The Lucid Pool is in operation to provide a modern, environmentally conscious infrastructure for the research and development of Cardano-based projects. The minimum fee of 340 and the margin of 1%  ensure competitive rewards for delegators until the pool builds a reputation and history of flawless uninterrupted operation.
 </p>
@@ -606,9 +631,9 @@ In 2021 we are primarily focused on improving the infrastructure and tools for t
 </div>
 </div>
 
-<div id="outline-container-orgeeed6ac" class="outline-3">
-<h3 id="orgeeed6ac"><span class="section-number-3">3.5</span> Mission</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-orgfe40eb7" class="outline-3">
+<h3 id="orgfe40eb7"><span class="section-number-3">2.5.</span> Mission</h3>
+<div class="outline-text-3" id="text-2-5">
 <blockquote>
 <p>
 Of course I want my investments to give me a good roi but more importantly, I want a part in helping change this world 🌎 for the better. I truly believe that Cardano is the best vehicle for major positive change.
@@ -621,11 +646,19 @@ Of course I want my investments to give me a good roi but more importantly, I wa
 <h2 class="footnotes">Footnotes: </h2>
 <div id="text-footnotes">
 
-<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://iohk.zendesk.com/hc/en-us/articles/900001951526-What-is-a-stake-pool">https://iohk.zendesk.com/hc/en-us/articles/900001951526-What-is-a-stake-pool</a>-
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2" role="doc-backlink">2</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
+<a href="https://docs.cardano.org/">https://docs.cardano.org/</a>
+</p></div></div>
+
+<div class="footdef"><sup><a id="fn.3" class="footnum" href="#fnr.3" role="doc-backlink">3</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 <a href="https://mailchimp.com/resources/startup-marketing-strategy/">https://mailchimp.com/resources/startup-marketing-strategy/</a>
 </p></div></div>
 
-<div class="footdef"><sup><a id="fn.2" class="footnum" href="#fnr.2">2</a></sup> <div class="footpara"><p class="footpara">
+<div class="footdef"><sup><a id="fn.4" class="footnum" href="#fnr.4" role="doc-backlink">4</a></sup> <div class="footpara" role="doc-footnote"><p class="footpara">
 <a href="https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/">https://why.cardano.org/en/science-and-engineering/the-art-of-iteration/</a>
 </p></div></div>
 
@@ -633,8 +666,8 @@ Of course I want my investments to give me a good roi but more importantly, I wa
 </div>
 </div></div>
 <div id="postamble" class="status">
-<p class="author">Author: Andy Candy</p>
-<p class="date">Created: 2021-07-12 Mon 17:46</p>
+<p class="author">Author: Andrej Novikov</p>
+<p class="date">Created: 2021-07-19 Mon 19:12</p>
 </div>
 </body>
 </html>
