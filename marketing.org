@@ -3,6 +3,14 @@
 * Marketing Checklist
 ** The Product
 We provide stake pool service for owners of Ada cryptocurrency.
+
+*lucid* is telling the story of awakening, enightenment and emancipation.
+
+We draw attention to philosophical and social challenges that blockchain technologies enable to be solved.
+
+We are participating in a paradigm shift towards tranparent, fair and sustainable economy.
+
+*lucid* is pool of visionaries that embrace the new possibilities and are bringing the brave new world to live.
 *** What is stake pool?
 A stake pool is a reliable server node that focuses on maintenance and holds the combined stake of various stakeholders in a single entity.
 Stake pools are responsible for processing transactions and producing new blocks and are at the core of the Cardano proof-of-stake protocol.[fn:4]
@@ -90,15 +98,17 @@ Describe a narrow segment within our target audience.
 tracks interactions with website (rizome.io and lucid.rizome.io)
 *** Delegator count and delegation amount
 denotes directly acquired customers
-* Rizome.io
+* Brand / Product
+** What is rizome.io
+*rizome.io* is a company brand that is behind the *lucid* stake pool
+** What is lucid
+*lucid* is a stake pool service (the product)
 ** Headlines
 *** Blockchain Consulting, Reseach & Solutions
 *** Architecture for distributed ledger tech
 We provide reliable design and infrastructure solutions for projects powered by blockchain.
 
-** TODO Value proposition
-DEADLINE: <2021-07-09 Fri>
-*** IDEA bridging the gap for business use case of DLT
+** Value proposition
 *** Mission
 **** Reference: Cardano :noexport:
 #+begin_quote
