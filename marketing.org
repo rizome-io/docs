@@ -161,6 +161,35 @@ Of course I want my investments to give me a good roi but more importantly, I wa
 
 #+end_quote
 [fn:3]
+* Introduction to Lucid
+** Andy
+I was fascinated by server infrastructure since my early adolesence
+when I started this journey with hosting an mmorpg game server.
+It has been a long ride throughout time working on social platforms ([[https://heal.me][heal.me]]),
+blockchain/networking/privacy based projects ([[https://mysterium.network][mysterium.network]]),
+and my current gig with security and architecture for a
+major support and natiral language processing whitelabel company.
+
+What excites me most about the blockchain technology is the freedom
+it brings from dicatorship of the men in power.
+I was doing a bit of research into self-sustaining communities, and the
+challenges they were facing. This research could be summarized in the idea
+that we should be embracing the knowledge/progress and new technologies
+making it serve the society.
+
+The other passion of mine is getting close to earth, nature and my inner
+self.
+That is excercising conscious activities, spending time in the woods doing nothing, observing my emotions and calming my brain.
+Being transparent about my thoughts, feelings with myself, with friends and family.
+This might seem not much, but I'm not tracking a score here, this already
+feels big from the personal perspective.
+
+Not long time ago I decided to take a piece of land, forest and take care of it.
+My dream is to create a forest garden, a place where anyone can find piece,
+and learn the simple lessons nature has to offer. My aim is to create
+permaculture ecosystem that would grow and evolve, being able to sustain
+and fruitful with the least of human intervention that is possible.
+
 
 * Footnotes
 
