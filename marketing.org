@@ -190,6 +190,30 @@ and learn the simple lessons nature has to offer. My aim is to create
 permaculture ecosystem that would grow and evolve, being able to sustain
 and fruitful with the least of human intervention that is possible.
 
+* Rizome Introduction
+** Lucid Stake Pool Intro 
+We are incredibly excited to announce the launch of our Cardano stake pool called Lucid. It has been a passion project that has been long in the works, built with extreme care and a long-term vision in mind. Finally, we are ready to present it to the community.  
+
+As promising as Cardano is in itself, we are confident that the upcoming launch of smart-contract integration has the potential to completely change the game. We have built our stake pool infrastructure with that in mind. On the technological side, our servers are bulletproof.  In the near future we plan to run them exclusively on sustainable energy. We made them as efficient as possible, with additional stand-alone backup machines ready to go, in case of any emergency situation. That guarantees our stake-holders a service that is effortless and reliable 24/7. Once you join our pool, you can rest assured that everything is going to be taken care of. Our fundamentals are solid, and that is a beautiful start. However, our mission is bigger than that. 
+
+We pride ourselves at the fact that Lucid is more than just a stake pool. It is designed to be one leg of our Rizome operation, which encompasses a host of projects aimed at providing free education, supporting environmentally replenishing causes, and aiding in the global financial paradigm-shift that Cardano is capable of fuelling.  
+
+The focus on spreading free educational content is amongst our highest priorities. The technology behind Cardano is incredibly promising. We are sitting on gold, yet the conversations around it are still a niche for technological enthusiasts. It is our mission to help more people to understand the deep implications of what the implementation of this technology could do to advance our transactions, and ultimately, our society. Such an advancement could not only revolutionize our financial systems, but we believe that the potential applications could also have a significant impact on people’s mental freedom and approach to life. Eventually, that has the power to change the world, one perspective at a time.
+
+ It might seem that this is wishful thinking, but we are practical idealists at heart. Global changes get sparked by forward-thinking ideas before they turn into actions. Social media is an excellent tool that we have to hone that. Just like a blade, one can use it for constructive purposes, or for destructive ones. Our aim is to spread life-giving lessons through the power of social networks. Lucid is geared to be a fan for the philosophically oriented sparks that touch upon what it means to be a human in the twenty first century, and the conscious navigation of the multitude of challenges and opportunities in our technologically potent world. In our view, being healthy, smart and capable in such an environment should encompass a knowledge of self, emotional intelligence, and technological savviness. We think that is especially important to instill inspiring ideas to the younger generation in an understandable and welcoming way. That is why a part of our operation is centered around giving people bite-sized lessons on concepts that work to expand and sharpen one’s mind. That encompasses the insights of classical philosophers, practical mental-health lessons, and tips on navigating the technological and financial landscapes of today.
+
+** Rizome Garden
+
+Another important aspect for us is operating in an environmentally conscious, and constructive way. Apart from eventually running exclusively on green energy, we have plans to expand upon that notion. Currently, we have started to build our Rizome Garden. It is a space out in a remote location which will be a multi-purpose hub of activity. It will become the headquarters of our operation, a place for gathering of like-minded people, and a place for the production of green energy. 
+**  Andy Novokov 
+ Our head of operations is Andy Novokov. He has been fascinated with server infrastructures since he was a teenager. His passion lead him to build and host MMORPG game servers for the love of it. Later on he delved deeper into programming and the study of IT. Nowadays, he works with a major support and natural language processing whitelabel company where he is in charge of security and the maintenance of the overall tech architecture. On the side, Andy was always interested in blockchain technology. Ultimately, his excitement for its liberating potentials culminated in Rizome, and the Lucid Stake pool. He is closely knit and active in the blockchain community, helping to advance the fluid integration of Alonzo and … .   
+
+In the future, Andy dreams of creating a futuristic garden which will host the Rizome servers, events, and be a welcoming haven where like-minded people can come together – virtually and in person. The piece of land has already been secured, but big things don’t happen overnight. We take it one planned step at a time. If you have any questions, don’t hesitate to shoot Andy a message. He is a sociable person who loves to connect with others who are keen to learn and push blockchain technology forward. Our Lucid pool is meant to be personable. We strive to build relationships, and most importantly, a kind community where everybody is welcome to share their ideas, learn, and grow together.
+
+If you choose to join our pool, know that you will be welcomed with open arms. It is built on solid technological foundations, an excitement for the future, and a deep love for bettering humanity. We cannot wait for you to experience what we have in store for you. Our team is available to answer your questions everyday from 9-18 (GMT+2).
+
+Godspeed, friends,
+Your Lucid Team
 
 * Footnotes
 
