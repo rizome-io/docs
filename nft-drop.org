@@ -1,0 +1,75 @@
+#+TITLE: NFT Drop
+#+author: Andy Candy (id@rizome.io)
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
+#+CATEGORY: rizome.io
+
+* Main
+** Key Challenges
+*** high mint price
+- L1 solutions (Cardano, Solana, Avalanche)
+- L2 solutions (ImmutableX, Polygon, Harmony.one)
+- rollup option (L2 -> eth) [[https://ethresear.ch/t/cross-rollup-nft-wrapper-and-migration-ideas/10507][Cross-rollup NFT wrapper and migration ideas - Sharding - Ethereum Research]]
+*** market reach
+[[*Marketing][Marketing]]
+
+** Timelines [0/3]
+*** [-] research
+*** [ ] production
+*** [ ] implementation
+** Marketing [0/4]
+*** [ ] Twitter post schedule
+*** [ ] Discord interaction plan
+*** [ ] YouTube content volume
+*** [ ] Influencer list
+** Measuring success [0/3]
+*** [ ] Community size
+*** [ ] funds raised
+*** [ ] trading volume
+** Settlement Layers
+| Network     | Volume (7d @ [2022-01-19 Wed] ) | Perks                         | Stats                       |
+|-------------+---------------------------------+-------------------------------+-----------------------------|
+| Ethereum    | $187M (top 5 cumulative)        | - primary chain               | https://nonfungible.com     |
+|             |                                 | - largest volume              |                             |
+|             |                                 | - some tooling already setup  |                             |
+|             |                                 |                               |                             |
+| Cardano     | $13.7M (top 5 cum)              |                               | https://opencnft.io/        |
+| Solana      | $6.3M (top 5 cum ?)             |                               | https://www.solanalysis.com |
+| Avalanche   | $1.73M (top 5 cum ?)            |                               | [[https://avaxnftstats.com/][avaxnftstats.com]]            |
+| Polygon     | total $2.2M                     | - listed on opensea           | [[https://blockworks.co/opensea-polygon-nft-sales-on-track-to-hit-2-2m-by-end-of-january/][blockworks]]                  |
+|             |                                 | - EVM compat                  |                             |
+| Harmony.one | total 1.7M sales                |                               | [[https://dappradar.com/harmony/marketplaces/davinci-nft-marketplace][dappradar]]                   |
+| ImmutableX  | ? (no data)                     | - specializes or gaming & nft |                             |
+|             |                                 | - layer 2 on Eth              |                             |
+|             |                                 | - fresh                       |                             |
+
+* COMMENT Settlement layer
+where the tokens actually live
+** Ethereum
+*** Volume
+[[https://nonfungible.com][NonFungible.com | Analyze, track & discover NFTs and collectible art markets]]
+*** Perks
+- Primary chain for nfts
+** Solana
+*** Volume
+[[https://www.solanalysis.com]]
+** Polygon
+*** Volume
+[[https://blockworks.co/opensea-polygon-nft-sales-on-track-to-hit-2-2m-by-end-of-january/][OpenSea Polygon NFT Sales On Track to Hit 2.2M by End of January - Blockworks]]
+*** Perks
+- listed on opensea
+- EVM compatible chain
+** Harmony.one
+*** Volume
+[[https://dappradar.com/harmony/marketplaces/davinci-nft-marketplace][daVinci NFT Marketplace | DappRadar]]
+*** Perks
+- EVM compatible
+** ImmutableX
+*** Volume
+???
+*** Perks
+- specializes on gaming & nft
+- layer 2 on Eth
+** Cardano
+*** Volume
+[[https://opencnft.io/][Ranking, cNFT data, prices, volume charts - OpenCNFT]]
+*** Perks

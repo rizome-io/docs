@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-01-19 Wed 12:25 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ntf Drop</title>
+<meta name="author" content="Andy Candy (id@rizome.io)" />
+<meta name="generator" content="Org Mode" />
+<style>
+  #content { max-width: 60em; margin: auto; }
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+    padding: 3px;
+    color: #555;
+    background-color: #f2f2f299;
+  }
+  pre.src:hover:before { display: inline; margin-top: 14px;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-authinfo::before { content: 'Authinfo'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/bigblow.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/bigblow_theme/css/hideshow.css"/>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery-ui-1.10.2.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.localscroll-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/jquery.zclip.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/bigblow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/bigblow_theme/js/hideshow.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Ntf Drop</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgc685915">1. Main</a>
+<ul>
+<li><a href="#orgd4ca381">1.1. Key Challenges</a>
+<ul>
+<li><a href="#org79e2ea1">1.1.1. high mint price</a></li>
+<li><a href="#orgf0f8c65">1.1.2. market reach</a></li>
+</ul>
+</li>
+<li><a href="#orgcfb03d0">1.2. Timelines <code>[0/3]</code></a>
+<ul>
+<li><a href="#org47f795e">1.2.1. <span class="todo ___">[-]</span> research</a></li>
+<li><a href="#orgca60519">1.2.2. <span class="todo ___">[ ]</span> production</a></li>
+<li><a href="#org51119f0">1.2.3. <span class="todo ___">[ ]</span> implementation</a></li>
+</ul>
+</li>
+<li><a href="#orgc2a34ab">1.3. Marketing <code>[0/4]</code></a>
+<ul>
+<li><a href="#org76de91d">1.3.1. <span class="todo ___">[ ]</span> Twitter post schedule</a></li>
+<li><a href="#org0cc8529">1.3.2. <span class="todo ___">[ ]</span> Discord interaction plan</a></li>
+<li><a href="#org0a27ec8">1.3.3. <span class="todo ___">[ ]</span> YouTube content volume</a></li>
+<li><a href="#org8d6752a">1.3.4. <span class="todo ___">[ ]</span> Influencer list</a></li>
+</ul>
+</li>
+<li><a href="#org37306cd">1.4. Measuring success <code>[0/3]</code></a>
+<ul>
+<li><a href="#org36916b9">1.4.1. <span class="todo ___">[ ]</span> Community size</a></li>
+<li><a href="#org7ef6df9">1.4.2. <span class="todo ___">[ ]</span> funds raised</a></li>
+<li><a href="#org70063e0">1.4.3. <span class="todo ___">[ ]</span> trading volume</a></li>
+</ul>
+</li>
+<li><a href="#orge6918a4">1.5. Settlement Layers</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc685915" class="outline-2">
+<h2 id="orgc685915"><span class="section-number-2">1.</span> Main</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgd4ca381" class="outline-3">
+<h3 id="orgd4ca381"><span class="section-number-3">1.1.</span> Key Challenges</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org79e2ea1" class="outline-4">
+<h4 id="org79e2ea1"><span class="section-number-4">1.1.1.</span> high mint price</h4>
+<div class="outline-text-4" id="text-1-1-1">
+<ul class="org-ul">
+<li>L1 solutions (Cardano, Solana, Avalanche)</li>
+<li>L2 solutions (ImmutableX, Polygon, Harmony.one)</li>
+<li>rollup option (L2 -&gt; eth) <a href="https://ethresear.ch/t/cross-rollup-nft-wrapper-and-migration-ideas/10507">Cross-rollup NFT wrapper and migration ideas - Sharding - Ethereum Research</a></li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgf0f8c65" class="outline-4">
+<h4 id="orgf0f8c65"><span class="section-number-4">1.1.2.</span> market reach</h4>
+<div class="outline-text-4" id="text-1-1-2">
+<p>
+<a href="#orgc2a34ab">Marketing</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcfb03d0" class="outline-3">
+<h3 id="orgcfb03d0"><span class="section-number-3">1.2.</span> Timelines <code>[0/3]</code></h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-org47f795e" class="outline-4">
+<h4 id="org47f795e"><span class="section-number-4">1.2.1.</span> <span class="todo ___">[-]</span> research</h4>
+</div>
+<div id="outline-container-orgca60519" class="outline-4">
+<h4 id="orgca60519"><span class="section-number-4">1.2.2.</span> <span class="todo ___">[ ]</span> production</h4>
+</div>
+<div id="outline-container-org51119f0" class="outline-4">
+<h4 id="org51119f0"><span class="section-number-4">1.2.3.</span> <span class="todo ___">[ ]</span> implementation</h4>
+</div>
+</div>
+<div id="outline-container-orgc2a34ab" class="outline-3">
+<h3 id="orgc2a34ab"><span class="section-number-3">1.3.</span> Marketing <code>[0/4]</code></h3>
+<div class="outline-text-3" id="text-1-3">
+</div>
+<div id="outline-container-org76de91d" class="outline-4">
+<h4 id="org76de91d"><span class="section-number-4">1.3.1.</span> <span class="todo ___">[ ]</span> Twitter post schedule</h4>
+</div>
+<div id="outline-container-org0cc8529" class="outline-4">
+<h4 id="org0cc8529"><span class="section-number-4">1.3.2.</span> <span class="todo ___">[ ]</span> Discord interaction plan</h4>
+</div>
+<div id="outline-container-org0a27ec8" class="outline-4">
+<h4 id="org0a27ec8"><span class="section-number-4">1.3.3.</span> <span class="todo ___">[ ]</span> YouTube content volume</h4>
+</div>
+<div id="outline-container-org8d6752a" class="outline-4">
+<h4 id="org8d6752a"><span class="section-number-4">1.3.4.</span> <span class="todo ___">[ ]</span> Influencer list</h4>
+</div>
+</div>
+<div id="outline-container-org37306cd" class="outline-3">
+<h3 id="org37306cd"><span class="section-number-3">1.4.</span> Measuring success <code>[0/3]</code></h3>
+<div class="outline-text-3" id="text-1-4">
+</div>
+<div id="outline-container-org36916b9" class="outline-4">
+<h4 id="org36916b9"><span class="section-number-4">1.4.1.</span> <span class="todo ___">[ ]</span> Community size</h4>
+</div>
+<div id="outline-container-org7ef6df9" class="outline-4">
+<h4 id="org7ef6df9"><span class="section-number-4">1.4.2.</span> <span class="todo ___">[ ]</span> funds raised</h4>
+</div>
+<div id="outline-container-org70063e0" class="outline-4">
+<h4 id="org70063e0"><span class="section-number-4">1.4.3.</span> <span class="todo ___">[ ]</span> trading volume</h4>
+</div>
+</div>
+<div id="outline-container-orge6918a4" class="outline-3">
+<h3 id="orge6918a4"><span class="section-number-3">1.5.</span> Settlement Layers</h3>
+<div class="outline-text-3" id="text-1-5">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Network</th>
+<th scope="col" class="org-left">Volume (7d @ <span class="timestamp-wrapper"><span class="timestamp">[2022-01-19 Wed] </span></span> )</th>
+<th scope="col" class="org-left">Perks</th>
+<th scope="col" class="org-left">Stats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Ethereum</td>
+<td class="org-left">$187M (top 5 cumulative)</td>
+<td class="org-left">- primary chain</td>
+<td class="org-left"><a href="https://nonfungible.com">https://nonfungible.com</a></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- largest volume</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- some tooling already setup</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Cardano</td>
+<td class="org-left">$13.7M (top 5 cum)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://opencnft.io/">https://opencnft.io/</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Solana</td>
+<td class="org-left">$6.3M (top 5 cum ?)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://www.solanalysis.com">https://www.solanalysis.com</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Avalanche</td>
+<td class="org-left">$1.73M (top 5 cum ?)</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://avaxnftstats.com/">avaxnftstats.com</a></td>
+</tr>
+
+<tr>
+<td class="org-left">Polygon</td>
+<td class="org-left">total $2.2M</td>
+<td class="org-left">- listed on opensea</td>
+<td class="org-left"><a href="https://blockworks.co/opensea-polygon-nft-sales-on-track-to-hit-2-2m-by-end-of-january/">blockworks</a></td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- EVM compat</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Harmony.one</td>
+<td class="org-left">total 1.7M sales</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left"><a href="https://dappradar.com/harmony/marketplaces/davinci-nft-marketplace">dappradar</a></td>
+</tr>
+
+<tr>
+<td class="org-left">ImmutableX</td>
+<td class="org-left">? (no data)</td>
+<td class="org-left">- specializes or gaming &amp; nft</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- layer 2 on Eth</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">- fresh</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Andy Candy (id@rizome.io)</p>
+<p class="date">Created: 2022-01-19 Wed 12:25</p>
+</div>
+</body>
+</html>
