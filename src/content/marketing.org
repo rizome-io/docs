@@ -1,7 +1,7 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-bigblow.setup
 #+TITLE: Rizome Communication
 * Marketing Checklist
-** The Product
+** The Product A
 We provide stake pool service for owners of Ada cryptocurrency.
 
 *lucid* is telling the story of awakening, enightenment and emancipation.
